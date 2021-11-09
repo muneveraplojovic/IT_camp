@@ -1,0 +1,100 @@
+body {
+  background-color: #0e1217;
+  padding: 0px 0px 32px 0px;
+  display: inline-block;
+  margin-top: 150px;
+  margin-left: 200px;
+  margin-right: 80px;
+  margin-bottom: 20px;
+}
+
+.first_div {
+  height: 352px;
+  width: 280px;
+  background-color: #1c1f26;
+  border: rgb(78, 87, 87) 1px solid;
+  border-radius: 18px;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 8px;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.623);
+}
+
+.div_first {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 80px;
+  width: 250px;
+}
+.icon1 {
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  position: relative;
+  top: 8px;
+  left: 10px;
+}
+h3 {
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Roboto, Helvetica,
+    Ubuntu, Segoe UI, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol;
+  font-size: 18px;
+}
+.first_paragraf {
+  color: white;
+  padding: 0px 8px 0px 8px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+}
+
+img {
+  width: 280px;
+  height: 150px;
+  border-radius: 15px;
+}
+div .arrow_icon {
+  color: rgb(190, 190, 190);
+  font-size: 23px;
+  padding-left: 20px;
+  padding-right: 35px;
+  border: 1px;
+}
+
+div .comment_icon {
+  color: rgb(190, 190, 190);
+  font-size: 20px;
+  border: 1px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+div .bookmark_icon {
+  color: rgb(190, 190, 190);
+  font-size: 20px;
+  padding-left: 35px;
+  padding-right: 20px;
+  border: 1px;
+}
+.icon1_div {
+  width: 260px;
+  padding: 5px;
+  margin: 0px;
+  text-align: center;
+}
+
+.arrow_icon:hover {
+  color: rgba(31, 179, 2, 0.5);
+}
+.comment_icon:hover {
+  color: rgba(31, 179, 2, 0.5);
+}
+.bookmark_icon:hover {
+  color: rgba(31, 179, 2, 0.541);
+}
+
+.first_div:hover {
+  border: rgb(155, 150, 150) solid 1px;
+}
