@@ -79,3 +79,8 @@ aside p {
 a {
   text-decoration: none;
 }
+
+@media screen {
+  max-width: 360px;
+  .container;
+}
