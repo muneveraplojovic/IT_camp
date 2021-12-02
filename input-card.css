@@ -71,7 +71,7 @@ p {
   height: 30px;
   border: none;
   border-radius: 50px;
-  background: linear-gradient(to top, #d30695, #7207b9);
+  background: linear-gradient(to top, #05cc15, #057c15);
   cursor: pointer;
 }
 .second-b {
@@ -83,7 +83,6 @@ p {
   cursor: pointer;
 }
 .transparent {
-  background: linear-gradient(to top, #d3069594, #7207b993);
   z-index: 2;
   width: 70%;
   height: 100%;
