@@ -1,34 +1,98 @@
 body {
-  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box
+}
+source{
+  url (//images03.nicepage.com/a1389d7…/fd6c7d8…/pexels-photo-60342.jpeg);
+}
+.website {
   display: grid;
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  grid-template-rows: auto;
   grid-template-columns: 1fr;
-  grid-template-areas:
-    " header"
-    "main"
-    " footer";
+  
+
+}
+.f-d {
+  background-color: darkmagenta;
+ height: 100vh;
+ background: url(https://images03.nicepage.com/a1389d7bc73adea1e1c1fb7e/fd6c7d868a275455b0446b93/pexels-photo-60342.jpeg);
+ background-position: 50% 100%;
+ background-size: cover;
+ background-repeat: no-repeat;
+ z-index: 100;
+ position: relative;
+}
+.f-d-c{
+  color: #ffffff ;
+  position: absolute;
+  font-family: Roboto, sans-serif;
+  bottom: 0px;
+  right: 0px;
+  
+  text-align: right;
+  padding-right: 100px;
+    
+}
+.f-d-c h1{
+  letter-spacing: 2px;
+    font-size: 1rem;
+    font-weight: 700;
+    padding-bottom: 0px;
+    
+}
+.f-d-c h2{
+  font-size: 3.75rem;
+    line-height: 1.1;
+    word-wrap: break-word;
+    margin: 20px 0 60px 0px;
+    padding: 0px;
+    
+}
+.f-d i{
+
+  color: aliceblue;
+  font-size: 25px;
+  text-align: center;
+  display: block;
+  padding: 17px;
+  cursor: pointer;
 }
 
-header {
-  background: #f2f2f2;
-  width: 100%;
-  height: 10vh;
-  grid-area: "header";
-}
 
-main {
-  width: 100%;
-  height: 80vh;
-  grid-area: "main";
-  background-color: burlywood;
-}
 
-footer {
-  width: 100%;
-  height: 10vh;
-  grid-area: "footer";
-  background-color: #ff43ee;
+
+
+.s-d{
+  background-color: #8eacaa;
+  height: 100vh;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+.t-d {
+  background-color: darkorange;
+  height: 100vh;
+}
+.fth-d {
+  background-color: darkred;
+  height: 76vh;
+}
+.fv-d {
+  background-color: deeppink;
+  height: 70vh;
+}
+.sx-d {
+  background-color: deepskyblue;
+  height: 100vh;
+}
+.sv-d {
+  background-color: gold;
+  height: 100vh;
+}
+.e-d {
+  background-color: mediumblue;
+  height: 70vh;
+}
+.n-d {
+  background-color: peru;
+  height: 70vh;
 }
