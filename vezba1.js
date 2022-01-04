@@ -57,8 +57,8 @@
 //   console.log("Hello world ", i);
 // }
 
-// for (let i = 0; i < 10; i = i + 2) {
-//   console.log("Hello world ", i);
+//  for (let i = 0; i < 10; i = i + 2) {
+//    console.log("Hello world ", i);
 // }
 // for (let i = 0; i < 10; i = i + 3) {
 //   console.log("Hello world ", i);
@@ -94,16 +94,6 @@
 //   broj = Number(prompt("Unesite broj:"));
 //   console.log("Uneti broj je:", broj);
 // }
-// var max = 0;
-// for (let i = 0; i < 5; i++) {
-//   broj = Number(prompt("Unesite broj:"));
-//   console.log(broj);
-//   if (broj > max) {
-//     max = broj;
-//   }
-// }
-// console.log("Max je:");
-// console.log(max);
 
 //od unetih brojeva se odvaja max//
 // var max = 0;
@@ -129,15 +119,6 @@
 //   }
 // }
 
-// for (let i = 0; i <= 15; i++) {
-//   let num = prompt("Enter a number: ");
-//   if (num % 2 === 0) {
-//     console.log("The number is even:", i);
-//   } else {
-//     console.log("The number is odd:", i);
-//   }
-// }
-
 // for (let i = 1; i <= 10; i++) {
 //   if (i === 7) {
 //     continue;
@@ -153,7 +134,6 @@
 //   console.log("je super ");
 // }
 
-// for (let i = 0; i < 3; i++) {
 //   if (i < 3) {
 //     console.log("java");
 //   } else {
@@ -251,13 +231,117 @@
 // console.log(Match.floor(a));
 //unesemo brojeve neki max br brojeva i posle da nam odvji koliko ima parnih koliko ne
 
-// broj = 4;
-// broj = Number(window.prompt("Unesite brojeve:"));
+// console.log(object);
 
-// if (broj % 2 === 0) {
-//   console.log("paran");
-// } else {
-//   console.log("neparan");
+// limit = 10;
+// sum = 0;
+
+// for (let i = 1; i <= 10; i++) {
+//   if (i % 2 == 0) {
+//     sum = sum + i;
+//   }
+// }
+// console.log(`The sum of even numbers from 0 - ${limit} is: \n ${sum}`);
+
+// for (let i = 0; i <= 1000; i++) {
+//  let num = Number(prompt("Enter a number: "));
+//  if (num % 2 === 0) {
+//    console.log("The number is even:", i);
+//  } else {
+//      console.log("The number is odd:", i);
+//    }
+//    ;
+// sum = Number(prompt;
+// for (var x = 0; x <= 1000; x++) {
+//   if (x % 3 === 0 || x % 5 === 0) {
+//     sum += x;
+//   }
 // }
 
-// console.log(object);
+// int.max = 1000;
+// int.sum = 0;
+// for (let num = 3; num < max; num++) {
+//   if (num % 3 === 0 || num % 5 === 0) sum += num;
+// }
+// console.log("sum");
+
+// let sum = 0;
+// for (i = 1; i <= 1000; i++) {
+//   if (i % 2 == 0) {
+//     sum += i;
+//   } else i % 3 == 0;
+// }
+// console.log(sum);
+
+// broj = Number(window.prompt("Unesite brojeve:"));
+// if (broj % 2 === 0) {
+//   console.log("Broj je paran!");
+// } else {
+//   console.log("Broj je neparan!");
+// }
+
+// Broj = Number(window.prompt("Unesite beojeve:"));
+// if (Broj % 2 === 0) {
+//   console.log("Broj je paran!");
+// } else {
+//   console.log("Broj je neparan!");
+// }
+
+// n = n;
+// for (i = 1; i <= n; i++) {
+//   if (i % 2 == 0) {
+//     n += i;
+//   }
+// }
+
+// for (let i = 0; i <= 1000; i++) {
+//   let num = prompt("Enter a number: ");
+//   if (num % 2 === 0) {
+//     console.log("The number is even:");
+//   } else {
+//     console.log("The number is odd:");
+
+// var max = 5;
+// for (let i = 0; i <= 5; i++) {
+//   let broj = Number(prompt("Unesite broj:"));
+//   if (broj % 2 === 0 > max) {
+//     console.log("Broj je paran!");
+//   } else {
+//     console.log("Broj je neparan!");
+//   }
+// }
+// var parni = 0;
+// var neparni = 0;
+// for (let i = 0; i < 10; i++) {
+//   broj = Number(prompt("Unesite broj;"));
+//   if (broj % 2 === 0) {
+//     parni += 1;
+//   } else neparni += 1;
+// }
+// console.log(parni);
+// console.log(neparni);
+// (!(i%3))
+
+// var broj = 0;
+// for (let i = 1; i <= 50; i++) {
+//   if (i % 3 === 0 && i % 5 === 0) {
+//     console.log(i, "fizz-buzz");
+//   } else if (i % 5 === 0) {
+//     console.log(i, "buzz");
+//   } else if (i % 3 === 0) {
+//     console.log(i, "fizz");
+//   } else {
+//     console.log(i);
+//   }
+// }
+//interval
+//code wars
+// number= 7
+// fakt=1
+//  n = Number(prompt("unesite broj"));
+//  for (let i = 0; i <= number; i++) {
+//    fakt *= i
+//    }
+// console.log(fakt);
+
+//slika sa telEFONA
