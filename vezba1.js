@@ -317,6 +317,16 @@
 //   if (broj % 2 === 0) {
 //     parni += 1;
 //   } else neparni += 1;
+
+// for (let i = 1; i <= 4; i++) {
+//   fakt = 1;
+//   for (let j = 1; j <= i; j++) {
+//     fakt = fakt * j;
+//   }
+//   console.log(fakt);
+//   suma += fakt;
+// }
+// console.log(suma);
 // }
 // console.log(parni);
 // console.log(neparni);
@@ -336,12 +346,151 @@
 // }
 //interval
 //code wars
-// number= 7
-// fakt=1
-//  n = Number(prompt("unesite broj"));
-//  for (let i = 0; i <= number; i++) {
-//    fakt *= i
-//    }
+// number = 7;
+// fakt = 1;
+// n = Number(prompt("unesite broj"));
+// for (let i = 0; i <= number; i++) {
+//   fakt *= i;
+// }
 // console.log(fakt);
+//for petja
+//faktorial
+//fibonacijev niz
+// nm1 = 1;
+// nm2 = 1;
+// console.log(nm1);
+// console.log(nm2);
 
-//slika sa telEFONA
+// for (let i = 0; i <= 8; i++) {
+//   nm = nm1 + nm2;
+//   console.log(nm);
+// }
+
+// suma = 0;
+// for (let i = 1; i <= 4; i++) {
+//   fakt = 1;
+//   for (let j = 1; j <= i; j++) {
+//     fakt = fakt * j;
+//   }
+//   console.log(fakt);
+//   suma += fakt;
+// }
+// console.log(suma);
+
+// for (var x = 0; x < 2; x++) {
+//   for (var y = 0; y < 2; y++) {
+//     console.log("x: " + x + ", y: " + y);
+//   }
+// }
+
+// for (var i = 0; i <= 5; i++) {
+//   for (var j = 0; j <= 1; j++) {
+//     console.log("*");
+//   }
+// }
+
+// var i, j, c;
+// for (i = 1; i <= 6; i++) {
+//   for (j = 1; j < i; j++) {
+//     c = c + " *";
+//   }
+//   console.log(c);
+//   c = "";
+// }
+
+// let zvezda = "";
+// for (let i = 1; i <= 5; i++) {
+//   console.log((zvezda += " *"));
+// }
+// let broj = "";
+// for (let i = 1; i <= 10; i++) {
+//   console.log((broj += i));
+// }
+// for (let i = 2; i <= 20; i += 2) {
+//   console.log(i);
+//   console.log("");
+// }
+// for (let i = 3; i <= 30; i += 3) {
+//   console.log(i);
+//   console.log("");
+// }
+// for (let i = 4; i <= 40; i += 4) {
+//   console.log(i);
+//   console.log("");
+// }
+// for (let i = 5; i <= 50; i += 5) {
+//   console.log(i);
+//   console.log("");
+// }
+
+// for (let i = 1; i <= 10; i++) {
+//   var red = "";
+//   for (let j = 1; j <= 10; j++) {
+//     red += `${i * j}\t`;
+//   }
+//   console.log(red, "\n");
+// }
+// var temp = 0;
+// var Brtemp = 0;
+// for (let i = 0; i <= 10; i++) {
+//   let num = Number(prompt("Enter a number: "));
+//   temp += num;
+//   Brtemp++;
+// }
+// console.log(temp);
+// console.log(Brtempt);
+// console.log("Srednja vrednost temp je:", temp / Brtemp);
+
+// var pozTemp = 0;
+// var negTemp = 0;
+
+// var pozBr = 0;
+// var negBr = 0;
+// for (let i = 0; i < 10; i++) {
+//   t = Number(prompt("Unesite temperaturu:"));
+//   if (t > 0) {
+//     pozBr++;
+//     pozTemp += t;
+//   } else {
+//     negBr++;
+//     negTemp += t;
+//   }
+// }
+
+// console.log("Srednja pozitivna je:", pozTemp / pozBr);
+
+// console.log("Srednja negativna je:", negTemp / negBr);
+
+// rec = String(prompt("Unesite rec:"));
+// rec1 = "ratar";
+// rec1 = "oko";
+// rec1 = "kuk";
+// rec1 = "ana";
+// rec1 = "ded";
+
+// if (rec === rec1) {
+//   console.log("rec je polindrom");
+// } else {
+//   console.log("rec nije polindrom");
+// }
+///indexxxxi
+
+// rec = "ratar";
+// console.log(rec[0]);
+// console.log(rec[1]);
+// console.log(rec[2]);
+// console.log(rec[3]);
+// console.log(rec[4]);
+
+//POLINDROM //
+
+rec = "ratar";
+for (let i = 0; i < Math.floor(rec.length / 2); i++) {
+  if (rec[i] !== rec[rec.length - 1 - i]) {
+    console.log("rec nije polindrom");
+    break;
+  }
+  if (i === Math.floor(rec.length / 2) - 1) {
+    console.log("rec je polindrom");
+  }
+}
