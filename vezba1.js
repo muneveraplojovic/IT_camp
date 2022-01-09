@@ -484,13 +484,61 @@
 
 //POLINDROM //
 
-rec = "ratar";
-for (let i = 0; i < Math.floor(rec.length / 2); i++) {
-  if (rec[i] !== rec[rec.length - 1 - i]) {
-    console.log("rec nije polindrom");
-    break;
-  }
-  if (i === Math.floor(rec.length / 2) - 1) {
-    console.log("rec je polindrom");
-  }
+// let num = i * j;
+// let s = String(num);
+// let rs = s.split("").reverse().join("");
+// if (s === rs) {
+//   nbr = Math.max(nbr, num);
+// }
+// rec = "ratkr";
+// for (let i = 0; i < Math.floor(rec.length / 2); i++) {
+//   if (rec[i] !== rec[rec.length - 1 - i]) {
+//     console.log("rec nije polindrom");
+//     break;
+//   }
+//   if (i === Math.floor(rec.length / 2) - 1) {
+//     console.log("rec je polindrom");
+//   }
+// }
+
+// let nbr = 0;
+// for (let i = 999; i >= 100; i--) {
+//   for (let j = 999; j >= 100; j--) {}
+// }
+
+// console.log(nbr);
+
+// for (let i = 10; i < 100; i++) {
+//   for (let j = 10; j < 100; j++){
+//     rez= String(i*j)
+//   }
+// }
+//tel//
+
+// brojac = 0;
+
+// while (brojac < 10) {
+//   console.log(brojac);
+//   brojac++;
+// }
+// lozinka = 12345678;
+// lozinka = Number("Unesite lozinku:");
+
+// while (true) {
+//   console.log("lozinka je tacna");
+// }
+
+// lozinka = "sifra";
+// sifra = prompt("Unesite sifru");
+
+// while (lozinka !== sifra) {
+//   sifra = prompt("Unesite ponovo sifru");
+// }
+// alert("Tacna lozinka");
+
+unos = Number(prompt("Unesite neki broj"));
+
+while (unos < 20 && unos > 10) {
+  console.log("Cestitamo pogodili ste");
+  break;
 }
