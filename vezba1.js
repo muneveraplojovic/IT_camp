@@ -536,9 +536,22 @@
 // }
 // alert("Tacna lozinka");
 
-unos = Number(prompt("Unesite neki broj"));
+//Homework//
+// var unos = prompt("Unesite operaciju: (odaberite: +, -, * ili /)");
 
-while (unos < 20 && unos > 10) {
-  console.log("Cestitamo pogodili ste");
-  break;
-}
+// var number1 = Number(prompt("Unesite prvi broj:"));
+// var number2 = Number(prompt("Unesite drugi broj:"));
+
+// let rezultat;
+
+// if (unos == "+") {
+//   rezultat = number1 + number2;
+// } else if (unos == "-") {
+//   rezultat = number1 - number2;
+// } else if (unos == "*") {
+//   rezultat = number1 * number2;
+// } else if (unos == "/") {
+//   rezultat = number1 / number2;
+// }
+
+// console.log(`${number1} ${unos} ${number2} = ${rezultat}`);
