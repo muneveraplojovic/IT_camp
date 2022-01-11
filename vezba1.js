@@ -523,7 +523,7 @@
 // }
 // lozinka = 12345678;
 // lozinka = Number("Unesite lozinku:");
-
+//manga//
 // while (true) {
 //   console.log("lozinka je tacna");
 // }
@@ -537,11 +537,11 @@
 // alert("Tacna lozinka");
 
 //Homework//
+
 // var unos = prompt("Unesite operaciju: (odaberite: +, -, * ili /)");
 
 // var number1 = Number(prompt("Unesite prvi broj:"));
 // var number2 = Number(prompt("Unesite drugi broj:"));
-
 // let rezultat;
 
 // if (unos == "+") {
@@ -555,3 +555,52 @@
 // }
 
 // console.log(`${number1} ${unos} ${number2} = ${rezultat}`);
+
+//do while//
+//nizovi-arrays
+//struktura podatska
+// var cars = [113, 5, 8.7];
+// for (let i = 0; i < car.length; i++) {
+//   console.log(cars[1]);
+// }
+
+//provera
+// var cars = [113, 5, 8.7];
+// for (let i = 0; i < car.length; i++) {
+//   console.log(cars[1] + "-" + 3);
+// }
+// console.log(cars[cars.length - 1]);
+//ispisuje poslednji
+
+//push array
+// ucenici = [];
+// brUcenika = Number(prompt("Unesite broj ucenika:"));
+
+// for (let i = 0; i < brUcenika; i++) {
+//   visina = Number(prompt("visina"));
+//   ucenici.push(visina);
+// }
+
+// min = ucenici[0];
+// max = ucenici[0];
+
+// for (let i = 0; i < ucenici.length; i++) {
+//   if (max < ucenici[i]) {
+//     max = ucenicii[i];
+//   }
+//   if (min > ucenici[i]) {
+//     min = ucenici[i];
+//   }
+// }
+// console.log(ucenici);
+// console.log(min);
+// console.log(max);
+
+ucenici = [];
+brUcenika = Number(prompt("Unesite broj ucenika:"));
+
+for (let i = 0; i < brUcenika; i++) {
+  visina = Number(prompt("visina"));
+  ucenici.push(visina);
+}
+console.log(ucenici);
