@@ -596,11 +596,71 @@
 // console.log(min);
 // console.log(max);
 
-ucenici = [];
-brUcenika = Number(prompt("Unesite broj ucenika:"));
+// ucenici = [];
+// brUcenika = Number(prompt("Unesite broj ucenika:"));
 
-for (let i = 0; i < brUcenika; i++) {
-  visina = Number(prompt("visina"));
-  ucenici.push(visina);
+// for (let i = 0; i < brUcenika; i++) {
+//   visina = Number(prompt("visina"));
+//   ucenici.push(visina);
+// }
+// console.log(ucenici);
+//nacin cuvanje podata //grupisemo odredjene vrednost
+//sve mozemo da grupisemo
+//node vezba1.jsconsole.log(i);
+//
+
+// var niz = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// suma = 0;
+// // console.log(niz);
+// for (let i = 1; i <= niz.length; i++) {
+//   if (i % 2 === 0) {
+//     console.log("Parni brojevi su:", i);
+
+//     suma += i;
+//   }
+// }
+// console.log("Suma parnih brojeva je:", suma);
+
+// var niz = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// suma = 0;
+// for (let i = 0; i <= niz.length; i++) {
+//   niz[i] = niz[i] * 3;
+// }
+// console.log(niz);
+
+// var niz1 = [1, 2, 3, 4, 5];
+// var niz2 = [];
+
+// for (let i = 0; i < niz1.length; i++) {
+//   const el = niz1[i];
+//   niz2.push(el);
+// }
+// niz1 = [];
+// console.log(niz1);
+// console.log(niz2);
+
+// pop-uklanja zadnji
+// shift-uklanja prvi element
+// unshift-dodaje na pocetak
+// push-dodaje element na kraj
+
+var a = [
+  [1, 2, 3, 4],
+  [5, 6, 7, 8],
+  [9, 10, 11, 12],
+];
+
+console.log(a[0]);
+console.log(a[1]);
+console.log(a[2]);
+
+for (let i = 0; i <= a.length; i++) {
+  const row = a[i];
+  for (let j = 0; j <= row; j++) {
+    const el = row[j];
+    proces.stdout.write(row[j] + "\t");
+  }
 }
-console.log(ucenici);
+console.log();
+// i-kolona
+// j-red
