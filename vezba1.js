@@ -644,23 +644,86 @@
 // unshift-dodaje na pocetak
 // push-dodaje element na kraj
 
-var a = [
-  [1, 2, 3, 4],
-  [5, 6, 7, 8],
-  [9, 10, 11, 12],
-];
+// var a = [
+//   [1, 2, 3, 4],
+//   [5, 6, 7, 8],
+//   [9, 10, 11, 12],
+// ];
 
-console.log(a[0]);
-console.log(a[1]);
-console.log(a[2]);
+// console.log(a[0]);
+// console.log(a[1]);
+// console.log(a[2]);
 
-for (let i = 0; i <= a.length; i++) {
-  const row = a[i];
-  for (let j = 0; j <= row; j++) {
-    const el = row[j];
-    proces.stdout.write(row[j] + "\t");
-  }
-}
-console.log();
+// for (let i = 0; i <= a.length; i++) {
+//   const row = a[i];
+//   for (let j = 0; j <= row; j++) {
+//     const el = row[j];
+//     proces.stdout.write(row[j] + "\t");
+//   }
+// }
+// console.log();
 // i-kolona
 // j-red
+
+// let a = [
+//   [0, 2, 3],
+//   [6, 0, 8],
+//   [11, 12, 0],
+// ];
+// for (i = 0; i < a.lenght; i++) {
+//   console.log(a[i]);
+// }
+// for (let i = 0; i < a.length; i++) {
+//   const row = a[i];
+//   red = "";
+//   for (let j = 0; j < row.length; j++) {
+//     const el = row[j];
+//     red += el + "\t";
+//   }
+//   console.log(red);
+// }
+
+// a = [
+//   [1, 2, 3, 4],
+//   [5, 6, 7, 8],
+//   [9, 10, 11, 12],
+// ];
+
+// for (let i = 0; i < a.length; i++) {
+//   const row = a[i];
+//   red = "";
+//   for (let j = 0; j < row.length; j++) {
+//     red += `${row[j]}[${i}][${j}] \t`;
+//   }
+//   console.log(red);
+// }
+
+let a = [
+  [0, 2, 3],
+  [6, 0, 8],
+  [11, 12, 0],
+];
+for (let i = 0; i < a.length; i++) {
+  const row = a[i];
+  red = "";
+  for (let j = 0; j < row.length; j++) {
+    const el = row[j];
+    red += el + "\t";
+  }
+  console.log(red);
+}
+console.log("");
+let b = [
+  [1, 2, 0],
+  [6, 0, 8],
+  [0, 12, 13],
+];
+for (let i = 0; i < b.length; i++) {
+  const row = b[i];
+  red = "";
+  for (let j = 0; j < row.length; j++) {
+    const el = row[j];
+    red += el + "\t";
+  }
+  console.log(red);
+}
