@@ -837,13 +837,6 @@
 // console.log("neparni", neparni);
 // console.log("parni", parni);
 
-// pop-uklanja zadnji
-// shift-uklanja prvi element
-// unshift-dodaje na pocetak
-// push-dodaje element na kraj
-//splice metoda-pocinj eod indeksa, brise n elementa, menjamo ga sa elemtima
-//slice- ide od tog indeksa do nekog indexa 0,3
-//typeOf
 //10 40 20 30 40 50
 
 // var niz = [10, 20, 30, 40, 50];
@@ -854,6 +847,15 @@
 
 // niz.splice(0, 1, niz[3]);
 // console.log(niz);
+
+//justacoding blog
+// pop-uklanja zadnji
+// shift-uklanja prvi element
+// unshift-dodaje na pocetak
+// push-dodaje element na kraj
+//splice metoda-pocinj eod indeksa, brise n elementa, menjamo ga sa elemtima
+//slice- ide od tog indeksa do nekog indexa 0,3
+//typeOf
 
 // niz = [
 //   ["a", 1, true],
@@ -895,4 +897,16 @@
 // }
 // console.log(niz1);
 
-//justacoding blog
+niz = [1, "c", 3, "e", "b", 2];
+
+niz1 = [];
+
+for (let i = 0; i < niz.length; i++) {
+  //   console.log(niz[i]);
+  if (Number(niz[i])) {
+    niz1.unshift(niz[i]);
+  } else if (String(niz[i])) {
+    niz1.push(niz[i]);
+  }
+}
+console.log(niz1);
