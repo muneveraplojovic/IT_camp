@@ -639,11 +639,6 @@
 // console.log(niz1);
 // console.log(niz2);
 
-// pop-uklanja zadnji
-// shift-uklanja prvi element
-// unshift-dodaje na pocetak
-// push-dodaje element na kraj
-
 // var a = [
 //   [1, 2, 3, 4],
 //   [5, 6, 7, 8],
@@ -683,6 +678,38 @@
 //   console.log(red);
 // }
 
+// let a = [
+//   [0, 2, 3],
+//   [6, 0, 8],
+//   [11, 12, 0],
+// ];
+// for (let i = 0; i < a.length; i++) {
+//   const row = a[i];
+//   red = "";
+//   for (let j = 0; j < row.length; j++) {
+//     const el = row[j];
+//     red += el + "\t";
+//   }
+//   console.log(red);
+// }
+
+// console.log("");
+
+// let b = [
+//   [1, 2, 0],
+//   [6, 0, 8],
+//   [0, 12, 13],
+// ];
+// for (let i = 0; i < b.length; i++) {
+//   const row = b[i];
+//   red = "";
+//   for (let j = 0; j < row.length; j++) {
+//     const el = row[j];
+//     red += el + "\t";
+//   }
+//   console.log(red);
+// }
+
 // a = [
 //   [1, 2, 3, 4],
 //   [5, 6, 7, 8],
@@ -693,37 +720,179 @@
 //   const row = a[i];
 //   red = "";
 //   for (let j = 0; j < row.length; j++) {
+//     if (i === j) {
+//       a[i][j] = 0;
+//       //mozemo da dodamo  \ 0 *
+//     }
 //     red += `${row[j]}[${i}][${j}] \t`;
 //   }
 //   console.log(red);
 // }
 
-let a = [
-  [0, 2, 3],
-  [6, 0, 8],
-  [11, 12, 0],
-];
-for (let i = 0; i < a.length; i++) {
-  const row = a[i];
-  red = "";
-  for (let j = 0; j < row.length; j++) {
-    const el = row[j];
-    red += el + "\t";
-  }
-  console.log(red);
-}
-console.log("");
-let b = [
-  [1, 2, 0],
-  [6, 0, 8],
-  [0, 12, 13],
-];
-for (let i = 0; i < b.length; i++) {
-  const row = b[i];
-  red = "";
-  for (let j = 0; j < row.length; j++) {
-    const el = row[j];
-    red += el + "\t";
-  }
-  console.log(red);
-}
+// a = [
+//   [1, 2, 3, 4],
+//   [5, 6, 7, 8],
+//   [9, 10, 11, 12],
+//[78,58,94,65]
+// ];
+
+// for (let i = 0; i < a.length; i++) {
+//   const row = a[i];
+//   red = "";
+//   for (let j = 0; j < row.length; j++) {
+//     if (i + j === a.length - 1) {
+//       a[i][j] = 0;
+//     }
+//     red += `${row[j]}[${i}][${j}] \t`;
+//   }
+//   console.log(red);
+// }
+
+// a = [
+//   [1, 2, 3, 4],
+//   [5, 6, 7, 8],
+//   [9, 10, 11, 12],
+// ];
+
+// for (let i = 0; i < a.length; i++) {
+//   for (let j = 0; j < a[i].length; j++) {
+//     if (i + j === a.length - 1) {
+//       a[i][j] = "\\";
+//       //mozemo da dodamo  \ 0 *
+//     }
+//     console.log(red);
+//   }
+// }
+//moramo da probam da li radi
+
+//array prototype includes
+
+// for (let i = 0; i < niz1.length; i++) {
+//   for (let j = 0; j < niz2.length; j++) {
+//     if (niz1.includes(1, 2)) {
+//     }
+//     console.log(niz1.includes(1, 2), niz2.includes(1, 2));
+//   }
+// }
+// console.log(niz2.includes(niz1[0]));
+// console.log(niz2.includes(niz1[1]));
+// console.log(niz2.includes(niz1[2]));
+
+// for (let i = 0; i < niz1.length; i++) {
+//   if (niz2.includes(niz1[i])) {
+//     console.log("nalazi se", niz1[i]);
+//   }
+// }
+//js exercise array w3 resorce
+
+// var niz1 = [1, 2, 3];
+// var niz2 = [100, 2, 1, 10];
+// var res = [];
+// for (let i = 0; i < niz1.length; i++) {
+//   if (!niz2.includes(niz1[i])) {
+//     console.log("ne nalazi se", niz1[i]);
+//     res.push(niz1[i]);
+//   }
+// }
+
+// for (let i = 0; i < niz2.length; i++) {
+//   if (!niz1.includes(niz2[i])) {
+//     console.log("ne nalazi se", niz2[i]);
+//     res.push(niz2[i]);
+//   }
+// }
+
+// console.log(res);
+// 30.zadatak
+// niz1 = [1, 2, 3];
+// niz2 = [2, 30, 1];
+
+// niz = [];
+// for (let i = 0; i < niz1.length; i++) {
+//   if (!niz.includes(niz1[i])) {
+//     niz.push(niz1[i]);
+//   }
+// }
+// console.log(niz);
+
+// for (let i = 0; i < niz2.length; i++) {
+//   if (!niz.includes(niz2[i])) {
+//     niz.push(niz2[i]);
+//   }
+// }
+// console.log(niz);
+
+// brojevi = [1, 2, 3, 4, 5, 6, 7, 8, 95, 84, 67, 24, 0];
+// parni = [];
+// neparni = [];
+// i = 0;
+// while (i < brojevi.length) {
+//   if (brojevi[i] % 2 === 0) {
+//     parni.push(brojevi[i]);
+//   } else {
+//     neparni.push(brojevi[i]);
+//   }
+//   i += 1;
+// }
+// console.log("neparni", neparni);
+// console.log("parni", parni);
+
+// pop-uklanja zadnji
+// shift-uklanja prvi element
+// unshift-dodaje na pocetak
+// push-dodaje element na kraj
+//splice metoda-pocinj eod indeksa, brise n elementa, menjamo ga sa elemtima
+//slice- ide od tog indeksa do nekog indexa 0,3
+//typeOf
+//10 40 20 30 40 50
+
+// var niz = [10, 20, 30, 40, 50];
+// //         0   1  2  3  4  5
+
+// console.log(niz);
+// el=niz[0]
+
+// niz.splice(0, 1, niz[3]);
+// console.log(niz);
+
+// niz = [
+//   ["a", 1, true],
+//   ["b", 2, false],
+// ];
+
+// nizResenje = [[], [], []];
+
+// for (let i = 0; i < niz.length; i++) {
+//   //prolazimo kroz niz 2 elementa
+//   for (let j = 0; j < niz[i].length; j++) {
+//     //prolazimo kroz pod nizove 3
+//     // console.log(niz[i]);
+//     //console.log(niz[i][j]);
+//     if (typeof niz[i][j] === "string") {
+//       //ukoliko je pod niz string uradii
+//       nizResenje[0].push(niz[i][j]);
+//       //
+//     } else if (typeof niz[i][j] === "number") {
+//       nizResenje[1].push(niz[i][j]);
+//     } else if (typeof niz[i][j] === "boolean") {
+//       nizResenje[2].push(niz[i][j]);
+//     }
+//   }
+// }
+// console.log(nizResenje);
+//
+
+// niz = [58, "", "abcd", true, null, false, 0];
+
+// niz1 = [];
+
+// for (let i = 0; i < niz.length; i++) {
+//   //   console.log(niz[i]);
+//   if (Boolean(niz[i])) {
+//ukoliko su el pod indexom 0,1,2,3,4,5,6 u boolean
+//     niz1.push(niz[i]);
+//   }
+// }
+// console.log(niz1);
+
+//justacoding blog
