@@ -897,16 +897,35 @@
 // }
 // console.log(niz1);
 
-niz = [1, "c", 3, "e", "b", 2];
+// niz = [1, "c", 3, "e", "b", 2];
 
-niz1 = [];
+// niz1 = [];
 
-for (let i = 0; i < niz.length; i++) {
-  //   console.log(niz[i]);
-  if (Number(niz[i])) {
-    niz1.unshift(niz[i]);
-  } else if (String(niz[i])) {
-    niz1.push(niz[i]);
+// for (let i = 0; i < niz.length; i++) {
+//   //   console.log(niz[i]);
+//   if (Number(niz[i])) {
+//     niz1.unshift(niz[i]);
+//   } else if (String(niz[i])) {
+//     niz1.push(niz[i]);
+//   }
+// }
+// console.log(niz1);
+
+for (var x = 0; x < 4; x++) {
+  //porlazimo kroz niz od 0 do 44
+  //0       1       2       3
+  //vrednost x se zadrzava dok se unutrasnja for petlja ne izvrsi cela
+  for (var j = 0; j < 4; j++) {
+    //prolazimo kroz unutrasnju for petlju, moze biti i da prolazimo kroz pod niz
+    //vrednost j se ne menja vec se svaki put ispisuje od 0 do 44
+    //0      1        2        3
+    console.log("x: " + x + ", j: " + j);
+    //ispisujemo:
+    //x zadrzava vrednost 0 sve dok u potpunosti ne prodjemo kroz unutrasnju for petlju
+    // 0=0
+    // 0=1
+    // 0=2
+    // 0=3
+    //0 se ispisuje 4 puta jer nije promenila vrednost itd...
   }
 }
-console.log(niz1);
