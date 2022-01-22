@@ -848,15 +848,6 @@
 // niz.splice(0, 1, niz[3]);
 // console.log(niz);
 
-//justacoding blog
-// pop-uklanja zadnji
-// shift-uklanja prvi element
-// unshift-dodaje na pocetak
-// push-dodaje element na kraj
-//splice metoda-pocinj eod indeksa, brise n elementa, menjamo ga sa elemtima
-//slice- ide od tog indeksa do nekog indexa 0,3
-//typeOf
-
 // niz = [
 //   ["a", 1, true],
 //   ["b", 2, false],
@@ -897,8 +888,38 @@
 // }
 // console.log(niz1);
 
-// niz = [1, "c", 3, "e", "b", 2];
+// for (var x = 0; x < 4; x++) {
+//   //prolazimo kroz niz od 0 do 44
+//   //0       1       2       3
+//   //vrednost x se zadrzava dok se unutrasnja for petlja ne izvrsi cela
+//   for (var j = 0; j < 4; j++) {
+//     //prolazimo kroz unutrasnju for petlju, moze biti i da prolazimo kroz pod niz
+//     //vrednost j se ne menja vec se svaki put ispisuje od 0 do 44
+//     //0      1        2        3
+//     console.log("x: " + x + ", j: " + j);
+//     //ispisujemo:
+//     //x zadrzava vrednost 0 sve dok u potpunosti ne prodjemo kroz unutrasnju for petlju
+//     // 0=0
+//     // 0=1
+//     // 0=2
+//     // 0=3
+//     //0 se ispisuje 4 puta jer nije promenila vrednost itd...
+//   }
+// }
+//justacoding blog
+// pop-uklanja zadnji
+// shift-uklanja prvi element
+// unshift-dodaje na pocetak
+// push-dodaje element na kraj
+//splice metoda-pocinje od indeksa, brise n elementa, menjamo ga sa elementima, ima 3 argumenta
+//slice- ide od tog indeksa do nekog indexa 0,3, uzima parce iz niza, stavljamo u novu varijablu
+//typeOf
+//includes
+//join- clg(el.join())-metoda niza, povezuje elemente
+//split- metoda stringa, razdvaja elemente
+//funkcije- 'pod program' , kad se nesto ponavlja koristimo funkcije, pozivamo taj pod porgram kad hocemo,
 
+// niz = [1, "c", 3, "e", "b", 2];
 // niz1 = [];
 
 // for (let i = 0; i < niz.length; i++) {
@@ -911,21 +932,27 @@
 // }
 // console.log(niz1);
 
-for (var x = 0; x < 4; x++) {
-  //porlazimo kroz niz od 0 do 44
-  //0       1       2       3
-  //vrednost x se zadrzava dok se unutrasnja for petlja ne izvrsi cela
-  for (var j = 0; j < 4; j++) {
-    //prolazimo kroz unutrasnju for petlju, moze biti i da prolazimo kroz pod niz
-    //vrednost j se ne menja vec se svaki put ispisuje od 0 do 44
-    //0      1        2        3
-    console.log("x: " + x + ", j: " + j);
-    //ispisujemo:
-    //x zadrzava vrednost 0 sve dok u potpunosti ne prodjemo kroz unutrasnju for petlju
-    // 0=0
-    // 0=1
-    // 0=2
-    // 0=3
-    //0 se ispisuje 4 puta jer nije promenila vrednost itd...
+function capitaliseString() {
+  let fox = "the quick brown fox";
+
+  fox = fox.split(" ");
+
+  for (let i = 0; i < fox.length; i++) {
+    let rec = fox[i];
+
+    console.log(rec);
+
+    rec = rec.split("");
+
+    rec[0] = rec[0].toUpperCase();
+
+    rec = rec.join("");
+
+    fox[i] = rec;
   }
+  fox = fox.join(" ");
+
+  console.log(fox);
 }
+
+capitaliseString();
