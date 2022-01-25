@@ -906,18 +906,6 @@
 //     //0 se ispisuje 4 puta jer nije promenila vrednost itd...
 //   }
 // }
-//justacoding blog
-// pop-uklanja zadnji
-// shift-uklanja prvi element
-// unshift-dodaje na pocetak
-// push-dodaje element na kraj
-//splice metoda-pocinje od indeksa, brise n elementa, menjamo ga sa elementima, ima 3 argumenta
-//slice- ide od tog indeksa do nekog indexa 0,3, uzima parce iz niza, stavljamo u novu varijablu
-//typeOf
-//includes
-//join- clg(el.join())-metoda niza, povezuje elemente
-//split- metoda stringa, razdvaja elemente
-//funkcije- 'pod program' , kad se nesto ponavlja koristimo funkcije, pozivamo taj pod porgram kad hocemo,
 
 // niz = [1, "c", 3, "e", "b", 2];
 // niz1 = [];
@@ -932,27 +920,79 @@
 // }
 // console.log(niz1);
 
-function capitaliseString() {
-  let fox = "the quick brown fox";
+// function capitaliseString() {
+//   //napravimo funkciju i damo joj ime
+//   let fox = "the quick brown fox";
+//   //napravimo varijablu za datu recenicu
+//   fox = fox.split(" ");
+//   //uz pomoc split funkcije napravimo niz ciji su elemnti po jedna rec stringa
+//   for (let i = 0; i < fox.length; i++) {
+//     //uz pomoc for petlje prodjemo kroz niz
+//     let rec = fox[i];
+//     //pravimo novu varijablu u kojoj cemo smestiti sve reci
+//     console.log(rec);
+//     //ispisemo sve reci jednu ispod druge
+//     rec = rec.split("");
+//     //svako slovo od reci odvojimo kao poseban element niza
+//     // ['t', 'h', 'e']
+//     rec[0] = rec[0].toUpperCase();
+//     //svaki prvi indeks (0), svako prvo slovo postaje veliko
+//     rec = rec.join("");
+//     //spojimo
+//     fox[i] = rec;
+//   }
+//   fox = fox.join(" ");
 
-  fox = fox.split(" ");
+//   console.log(fox);
+// }
 
-  for (let i = 0; i < fox.length; i++) {
-    let rec = fox[i];
+// capitaliseString();
 
-    console.log(rec);
+// function zbirNovcica(){
+// let coins=[25,10,5,2,1];
+// let money=46;
+// for (let i = 0; i <coins.length; i++) {
+//   const element = coins[i];
 
-    rec = rec.split("");
+// }
+// if (money>=coins[i]) {
+//   ostatak=(money-coins[i]);
 
-    rec[0] = rec[0].toUpperCase();
+// }else{coins.shift()}
 
-    rec = rec.join("");
+// }
 
-    fox[i] = rec;
+// function zbirNovcica ()
+
+//justacoding blog
+// pop-uklanja zadnji
+// shift-uklanja prvi element
+// unshift-dodaje na pocetak
+// push-dodaje element na kraj
+//splice metoda-pocinje od indeksa, brise n elementa, menjamo ga sa elementima, ima 3 argumenta
+//slice- ide od tog indeksa do nekog indexa 0,3, uzima parce iz niza, stavljamo u novu varijablu
+//typeOf
+//includes
+//join- clg(el.join())-metoda niza, povezuje elemente
+//split- metoda stringa, razdvaja elemente
+//funkcije- 'pod program' , kad se nesto ponavlja koristimo funkcije, pozivamo taj pod porgram kad hocemo,
+
+// function ime(name) {
+//   console.log("Vase ime je:", name);
+// }
+// unos = prompt("Unesite vase ime:");
+
+// ime(unos);
+
+
+function bmi(weight, height){
+  bmi = weight/height**2
+  if (bmi<=18.5){
+  return "Underweight";
+  }else if(bmi<=25.0){
+  return "Normal"
+  }else if(bmi<=30.0){
+  return "Overweight"
+  }else if(bmi>30){
+  return "Obese"
   }
-  fox = fox.join(" ");
-
-  console.log(fox);
-}
-
-capitaliseString();
