@@ -875,38 +875,6 @@
 // console.log(nizResenje);
 //
 
-// niz = [58, "", "abcd", true, null, false, 0];
-
-// niz1 = [];
-
-// for (let i = 0; i < niz.length; i++) {
-//   //   console.log(niz[i]);
-//   if (Boolean(niz[i])) {
-//ukoliko su el pod indexom 0,1,2,3,4,5,6 u boolean
-//     niz1.push(niz[i]);
-//   }
-// }
-// console.log(niz1);
-
-// for (var x = 0; x < 4; x++) {
-//   //prolazimo kroz niz od 0 do 44
-//   //0       1       2       3
-//   //vrednost x se zadrzava dok se unutrasnja for petlja ne izvrsi cela
-//   for (var j = 0; j < 4; j++) {
-//     //prolazimo kroz unutrasnju for petlju, moze biti i da prolazimo kroz pod niz
-//     //vrednost j se ne menja vec se svaki put ispisuje od 0 do 44
-//     //0      1        2        3
-//     console.log("x: " + x + ", j: " + j);
-//     //ispisujemo:
-//     //x zadrzava vrednost 0 sve dok u potpunosti ne prodjemo kroz unutrasnju for petlju
-//     // 0=0
-//     // 0=1
-//     // 0=2
-//     // 0=3
-//     //0 se ispisuje 4 puta jer nije promenila vrednost itd...
-//   }
-// }
-
 // niz = [1, "c", 3, "e", "b", 2];
 // niz1 = [];
 
@@ -976,7 +944,11 @@
 //join- clg(el.join())-metoda niza, povezuje elemente
 //split- metoda stringa, razdvaja elemente
 //funkcije- 'pod program' , kad se nesto ponavlja koristimo funkcije, pozivamo taj pod porgram kad hocemo,
-
+//argumenti-funkcija, da delovu funkcije budu promenljivi
+//tipovi podataka- primitivni i referntni
+//of-u nizu
+//
+//   console.log()
 // function ime(name) {
 //   console.log("Vase ime je:", name);
 // }
@@ -984,15 +956,86 @@
 
 // ime(unos);
 
+// function bmi(weight, height){
+//   bmi = weight/height**2
+//   if (bmi<=18.5){
+//   return "Underweight";
+//   }else if(bmi<=25.0){
+//   return "Normal"
+//   }else if(bmi<=30.0){
+//   return "Overweight"
+//   }else if(bmi>30){
+//   return "Obese"
+//   }
 
-function bmi(weight, height){
-  bmi = weight/height**2
-  if (bmi<=18.5){
-  return "Underweight";
-  }else if(bmi<=25.0){
-  return "Normal"
-  }else if(bmi<=30.0){
-  return "Overweight"
-  }else if(bmi>30){
-  return "Obese"
-  }
+// arr = [1, 3, 5];
+// for (let i = arr.length - 1; i >= 0; i++) {
+//   nArr = arr[i];
+// }
+// console.log(Math.max(arr[i]));
+
+// function array(niz) {
+//   max = niz[0];
+//   for (el of niz) {
+//     if (Math.abs(max) <= Math.abs(el)) {
+//       max = el;
+//     }
+//   }
+//   console.log(max);
+// }
+// array([1, 22, 33, 445, 58758]);
+
+// niz = [58, "", "abcd", true, null, false, 0];
+
+// niz1 = [];
+
+// for (let i = 0; i < niz.length; i++) {
+//   //   console.log(niz[i]);
+//   if (Boolean(niz[i])) {
+//ukoliko su el pod indexom 0,1,2,3,4,5,6 u boolean
+//     niz1.push(niz[i]);
+//   }
+// }
+// console.log(niz1);
+
+// for (var x = 0; x < 4; x++) {
+//   //prolazimo kroz niz od 0 do 44
+//   //0       1       2       3
+//   //vrednost x se zadrzava dok se unutrasnja for petlja ne izvrsi cela
+//   for (var j = 0; j < 4; j++) {
+//     //prolazimo kroz unutrasnju for petlju, moze biti i da prolazimo kroz pod niz
+//     //vrednost j se ne menja vec se svaki put ispisuje od 0 do 44
+//     //0      1        2        3
+//     console.log("x: " + x + ", j: " + j);
+//     //ispisujemo:
+//     //x zadrzava vrednost 0 sve dok u potpunosti ne prodjemo kroz unutrasnju for petlju
+//     // 0=0
+//     // 0=1
+//     // 0=2
+//     // 0=3
+//     //0 se ispisuje 4 puta jer nije promenila vrednost itd...
+//   }
+// }
+// data = [3, 0, 24, 54, 0, 123, 0, 32, 63];
+
+// function find(niz) {
+//   for (let i = 0; i < niz.length; i++) {
+//     if (niz[i] === 0) {
+//       niz.splice(i, 1);
+//       niz.push(0);
+//     }
+//   }
+//   console.log(niz);
+// }
+// find(data);
+
+// data = [3, 24, 54, 123, 32, 63];
+
+// function avarage(niz) {
+//   sum = 0;
+//   for (el of niz) {
+//     sum += el;
+//   }
+//   console.log(Math.ceil(sum / niz.length));
+// }
+// avarage(data);
