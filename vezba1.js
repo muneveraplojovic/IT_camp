@@ -932,21 +932,6 @@
 
 // function zbirNovcica ()
 
-//justacoding blog
-// pop-uklanja zadnji
-// shift-uklanja prvi element
-// unshift-dodaje na pocetak
-// push-dodaje element na kraj
-//splice metoda-pocinje od indeksa, brise n elementa, menjamo ga sa elementima, ima 3 argumenta
-//slice- ide od tog indeksa do nekog indexa 0,3, uzima parce iz niza, stavljamo u novu varijablu
-//typeOf
-//includes
-//join- clg(el.join())-metoda niza, povezuje elemente
-//split- metoda stringa, razdvaja elemente
-//funkcije- 'pod program' , kad se nesto ponavlja koristimo funkcije, pozivamo taj pod porgram kad hocemo,
-//argumenti-funkcija, da delovu funkcije budu promenljivi
-//tipovi podataka- primitivni i referntni
-//of-u nizu
 //
 //   console.log()
 // function ime(name) {
@@ -1039,3 +1024,126 @@
 //   console.log(Math.ceil(sum / niz.length));
 // }
 // avarage(data);
+
+// function oneszeros() {
+//   //napravimo funkciju, kojoj dajemo ime, bez promenljivog argumenta
+//   data = [3, 0, 24, 1, 54, 0, 123, 1, 32, 63];
+//   //dati niz
+//   for (i = 0; i < data.length; i++) {
+//     //uz pomoc for petlje prolazimo kroz niz
+//     if (data[i] === 0) {
+//       //ukoliko je neki broj iz datog niza jedna nuli sledi...
+//       data.splice(i, 1);
+//       //iz tog niza pod nekim indeksom brisemo nule, sledi...
+//       data.push(0);
+//       //ponovo te nule dodamo u niz ali na kraju niza
+//     } else if (data[i] === 1) {
+//       //u slucaju da se u datom nizu nalazi jedinica...
+//       data.splice(i, 1);
+//       //brisemo te jedinice iz niza, odnosno izvlacimo ih, i...
+//       data.unshift(1);
+//       //te jedinice dodajemo na pocetak niza
+//     }
+//   }
+
+//   console.log(data);
+//   //ispisujemo niz
+// }
+
+// oneszeros();
+
+//pozivamo funkciju
+
+//justacoding blog
+// pop-uklanja zadnji
+// shift-uklanja prvi element
+// unshift-dodaje na pocetak
+// push-dodaje element na kraj
+
+//splice metoda-pocinje od indeksa, brise n elementa, menjamo ga sa elementima, ima 3 argumenta
+//slice- ide od tog indeksa do nekog indexa 0,3, uzima parce iz niza, stavljamo u novu varijablu
+//typeOf
+//includes
+//join- clg(el.join())-metoda niza, povezuje elemente
+//split- metoda stringa, razdvaja elemente
+//funkcije- 'pod program' , kad se nesto ponavlja koristimo funkcije, pozivamo taj pod porgram kad hocemo,
+//argumenti-funkcija, da delovu funkcije budu promenljivi
+//tipovi podataka- primitivni i referntni
+//of-u nizu
+
+//   data=[1,2,3,4,5,6]
+//  data.forEach(()=>{
+//    console.log('Hello world');
+
+// data = [1, 2, 3, 4, 5, 6];
+// novi = data.map((el, i) => {
+//   return el + i;
+// });
+// console.log(data);
+// console.log(novi);
+
+// data = [1, 2, 3, 4, 5, 6];
+// novi = data.filter((el) => {
+//   return el > 3;
+// });
+// console.log(data);
+// console.log(novi);
+
+// data = [1, 2, 3, 4, 5, 6];
+// novi = data.some((el) => {
+//   return el > -3;
+//   //da li su svi veci od
+// });
+// console.log(novi);
+
+// data = [1, 2, 3, 4, 5, 6];
+// novi = data.map((el, i) => {
+//   if (el > 3) {
+//     return i;
+//   }
+//   //da li su svi veci od
+// });
+// console.log(novi);
+
+// data = ["a", "b", "c", "d"];
+// console.log(data.indexOf("b"));
+
+//map-vraca niz iste duzine, mora da bude ist lenght
+//lastIndexOf/////////////////////////////////////////////
+//data.find- vraca prvi elemnt koji ispunjava ovaj uslov
+//3 nacina pisanja funkcija
+//deklaracija funkcija function say(){}
+//varijabla funkcija a=function (){}    a()
+//b=()=>{}-arrow funtion
+//forEach-metoda niza-dobija funkciju-kao for petlja-za svaki element izvrsi ovu funkciju
+// //forEach-
+// data=[1,2,3,4,5,6]
+// data.forEach(function(){
+//   console.log('Hello world');
+// }) -ovde su funkcija direktno izvrsava
+//prvi argument nam je vrednost 1,2,3,4,5,6,
+//drugi argument- i-indeksi
+//treci argument-daje nam ceo array
+//for petnja --------for(el of neki el)
+//data.map- primeni funkciju i vrati novi niz;
+//data.filter-dobija funkciju,  na osnovu uslova on nama taj el vraca;
+//data.every-saljemo funkciju, vraca nam da li svi el u nizu ispunjavaju uslov true/false
+//data. some-da li barem jedan ispunjava niz
+
+// novi = data.every((el) => {});
+// console.log(novi);
+// data = [2, 5, 34, 65, 43, 52, 98, 23, 66];
+
+// data = [2, 5, 34, 65, 43, 52, 98, 23, 66];
+
+// novi = data.filter((el) => {
+//   return el % 2 === 0;
+// });
+// console.log(novi);
+
+data = [2, 5, 34, 65, 43, 52, 98, 23, 66];
+
+novi = data.some((el) => {
+  return el > 90;
+});
+console.log(novi);
