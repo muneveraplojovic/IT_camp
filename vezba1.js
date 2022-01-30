@@ -1055,21 +1055,6 @@
 //pozivamo funkciju
 
 //justacoding blog
-// pop-uklanja zadnji
-// shift-uklanja prvi element
-// unshift-dodaje na pocetak
-// push-dodaje element na kraj
-
-//splice metoda-pocinje od indeksa, brise n elementa, menjamo ga sa elementima, ima 3 argumenta
-//slice- ide od tog indeksa do nekog indexa 0,3, uzima parce iz niza, stavljamo u novu varijablu
-//typeOf
-//includes
-//join- clg(el.join())-metoda niza, povezuje elemente
-//split- metoda stringa, razdvaja elemente
-//funkcije- 'pod program' , kad se nesto ponavlja koristimo funkcije, pozivamo taj pod porgram kad hocemo,
-//argumenti-funkcija, da delovu funkcije budu promenljivi
-//tipovi podataka- primitivni i referntni
-//of-u nizu
 
 //   data=[1,2,3,4,5,6]
 //  data.forEach(()=>{
@@ -1108,14 +1093,34 @@
 // data = ["a", "b", "c", "d"];
 // console.log(data.indexOf("b"));
 
-//map-vraca niz iste duzine, mora da bude ist lenght
-//lastIndexOf/////////////////////////////////////////////
+//---------------------------------------------------------------------------------------------------
+// pop-uklanja zadnji
+// shift-uklanja prvi element
+// unshift-dodaje na pocetak
+// push-dodaje element na kraj
+//splice metoda-pocinje od indeksa, brise n elementa, menjamo ga sa elementima, ima 3 argumenta
+//slice- ide od tog indeksa do nekog indexa 0,3, uzima parce iz niza, stavljamo u novu varijablu
+//typeOf-daje tip elementa
+//includes-sadrzi, da li se u nizu nalazi
+//join- clg(el.join())-metoda niza, povezuje elemente
+//split- metoda stringa, razdvaja elemente
+//funkcije- 'pod program' , kad se nesto ponavlja koristimo funkcije, pozivamo taj pod porgram kad hocemo,
+//argumenti-funkcija, da delovu funkcije budu promenljivi
+//tipovi podataka- primitivni i referntni
+//of-u nizu, for petlji
+//map-vraca niz iste duzine, mora da bude isti lenght
+//lastIndexOf-daje nam indekse
 //data.find- vraca prvi elemnt koji ispunjava ovaj uslov
+//data.map- primeni funkciju i vrati novi niz;
+//data.filter-dobija funkciju,  na osnovu uslova on nama taj el vraca;
+//data.every-saljemo funkciju, vraca nam da li svi el u nizu ispunjavaju uslov true/false
+//data. some-da li barem jedan ispunjava niz
+//forEach-metoda niza-dobija funkciju-kao for petlja-za svaki element izvrsi ovu funkciju
+
 //3 nacina pisanja funkcija
 //deklaracija funkcija function say(){}
 //varijabla funkcija a=function (){}    a()
 //b=()=>{}-arrow funtion
-//forEach-metoda niza-dobija funkciju-kao for petlja-za svaki element izvrsi ovu funkciju
 // //forEach-
 // data=[1,2,3,4,5,6]
 // data.forEach(function(){
@@ -1125,10 +1130,6 @@
 //drugi argument- i-indeksi
 //treci argument-daje nam ceo array
 //for petnja --------for(el of neki el)
-//data.map- primeni funkciju i vrati novi niz;
-//data.filter-dobija funkciju,  na osnovu uslova on nama taj el vraca;
-//data.every-saljemo funkciju, vraca nam da li svi el u nizu ispunjavaju uslov true/false
-//data. some-da li barem jedan ispunjava niz
 
 // novi = data.every((el) => {});
 // console.log(novi);
@@ -1141,9 +1142,9 @@
 // });
 // console.log(novi);
 
-data = [2, 5, 34, 65, 43, 52, 98, 23, 66];
+// data = [2, 5, 34, 65, 43, 52, 98, 23, 66];
 
-novi = data.some((el) => {
-  return el > 90;
-});
-console.log(novi);
+// novi = data.some((el) => {
+//   return el > 90;
+// });
+// console.log(novi);
