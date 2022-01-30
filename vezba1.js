@@ -1148,3 +1148,12 @@
 //   return el > 90;
 // });
 // console.log(novi);
+
+function powersOfTwo(n){
+  arr = [];
+  for (var i = 0; i <= n; i++) {
+    arr.push(Math.pow(2, i));
+  }
+  return arr;
+
+}
