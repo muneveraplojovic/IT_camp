@@ -1148,3 +1148,41 @@
 //   return el > 90;
 // });
 // console.log(novi);
+
+//pozicione varijable
+
+// function sf (arg1, ARG2, arg3){
+// console.log(arg);
+// }
+
+// function sf (adas, axsaXD, 36454)
+
+// function sf (arg1, ARG2, arg3){
+//     console.log(arg);
+//     }
+
+//    var1=  function sf (adas, axsaXD, 36454)
+//    console.log(var1);
+
+// function arg(n) {
+//   pomArr = [];
+//   for (let i = 0; i <= n; i++) {
+//     pomArr.push(2 ** i);
+//   }
+
+//   return pomArr;
+// }
+// rez = arg(3);
+// console.log(rez);
+
+function reverseSeq(n) {
+  pArr = [];
+  for (let i = n; i > 0; i--) {
+    pArr.push(i);
+  }
+  return pArr;
+}
+
+// rez = reverseSeq(4);
+// console.log(rez);
+console.log(reverseSeq(4));
