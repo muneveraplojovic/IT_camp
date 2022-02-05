@@ -1116,6 +1116,7 @@
 //data.every-saljemo funkciju, vraca nam da li svi el u nizu ispunjavaju uslov true/false
 //data. some-da li barem jedan ispunjava niz
 //forEach-metoda niza-dobija funkciju-kao for petlja-za svaki element izvrsi ovu funkciju
+//algoritam-sort
 
 //3 nacina pisanja funkcija
 //deklaracija funkcija function say(){}
@@ -1226,47 +1227,71 @@
 // }
 // console.log(stray([1, 1, 1, 1, 1, 1, 2, 2]));
 
-function nbYear(p0, percent, aug, p) {
-  var rez = 0; //rez var
-  while (p0 < p) {
-    //sve dok je p0(populacija na pocetku godine) manje od p (populacija)
-    p0 = p0 + p0 * percent + aug;
-    //populacija na pocetku god = ppg+ppg*procenat rasta populacije...
-    rez++;
-    //uvecavaj rez
-  }
-  return rez;
-  //vrati rez
-}
+// function nbYear(p0, percent, aug, p) {
+//   var rez = 0; //rez var
+//   while (p0 < p) {
+//     //sve dok je p0(populacija na pocetku godine) manje od p (populacija)
+//     p0 = p0 + p0 * percent + aug;
+//     //populacija na pocetku god = ppg+ppg*procenat rasta populacije...
+//     rez++;
+//     //uvecavaj rez
+//   }
+//   return rez;
+//   //vrati rez
+// }
 
-function largestPairSum(numbers) {
-  if (numbers[0] > numbers[1]) {
-    //ukoliko je br pod indexom 0 veci od br pod indexom 1
-    let first = numbers[0];
-    //pravimo varijablu prvi koja ima vrednost broja sa prvog indexa
-    let second = numbers[1];
-    //pravimo varijablu drugi koja ima vrednost broja sa drugog indexa
+// function largestPairSum(numbers) {
+//   if (numbers[0] > numbers[1]) {
+//     //ukoliko je br pod indexom 0 veci od br pod indexom 1
+//     let first = numbers[0];
+//     //pravimo varijablu prvi koja ima vrednost broja sa prvog indexa
+//     let second = numbers[1];
+//     //pravimo varijablu drugi koja ima vrednost broja sa drugog indexa
+//   }
+//   //u slucaju da nije veci
+//   else {
+//     first = numbers[1];
+//     //pravimo varijablu prvi koja ima vrednost broja sa drugog indexa
+//     second = numbers[0];
+//     //pravimo varijablu drugi koja ima vrednost broja sa prvog indexa
+//   }
+//   for (
+//     let i = 2;
+//     i < numbers.length;
+//     i++
+//   ) //prolazimo kroz niz i trazimo dva najveca broja od ostatka niza
+//   {
+//     if (numbers[i] > first) {
+//       //ukoliko je trenutni element sa indexom i veci od prvog
+//       second = first;
+//       first = numbers[i];
+//     } else if (numbers[i] > second && numbers[i] != first)
+//       //ukoliko nam je niz po indexom i veci od drugog broja
+//       second = numbers[i];
+//   }
+//   return first + second;
+// // }
+// for (let i = 1; i < numbers.length - 1; i++) {
+//   //     if (numbers[i] !== numbers[i - 1] && numbers[i] !== numbers[i + 1]) {
+//   //       num = numbers[i];
+//   //       break;
+//   //     }
+//   //   }
+//insertion sort
+
+arr = [3, 44, 38, 5, 47, 15, 36, 26, 27, 2, 46, 4, 19, 50, 48];
+
+arrNew = [];
+
+for (let i = 0; i < arr.length; i++) {
+  for (let j = i + 1; j >= 0; j--) {
+    if (arr[j] < arr[j - 1]) {
+      let pomVar = arr[j];
+      arr[j] = arr[j - 1];
+      arr[j - 1] = pomVar;
+    } else {
+      break;
+    }
   }
-  //u slucaju da nije veci
-  else {
-    first = numbers[1];
-    //pravimo varijablu prvi koja ima vrednost broja sa drugog indexa
-    second = numbers[0];
-    //pravimo varijablu drugi koja ima vrednost broja sa prvog indexa
-  }
-  for (
-    let i = 2;
-    i < numbers.length;
-    i++
-  ) //prolazimo kroz niz i trazimo dva najveca broja od ostatka niza
-  {
-    if (numbers[i] > first) {
-      //ukoliko je trenutni element sa indexom i veci od prvog
-      second = first;
-      first = numbers[i];
-    } else if (numbers[i] > second && numbers[i] != first)
-      //ukoliko nam je niz po indexom i veci od drugog broja
-      second = numbers[i];
-  }
-  return first + second;
 }
+console.log(arr[arr.length - 1] + arr[arr.length - 2]);
