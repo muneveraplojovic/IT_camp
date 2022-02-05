@@ -1225,7 +1225,48 @@
 //   return num;
 // }
 // console.log(stray([1, 1, 1, 1, 1, 1, 2, 2]));
-function inverseSlice(items, a, b) {
-  items.splice(a, b - a);
-  return items;
+
+function nbYear(p0, percent, aug, p) {
+  var rez = 0; //rez var
+  while (p0 < p) {
+    //sve dok je p0(populacija na pocetku godine) manje od p (populacija)
+    p0 = p0 + p0 * percent + aug;
+    //populacija na pocetku god = ppg+ppg*procenat rasta populacije...
+    rez++;
+    //uvecavaj rez
+  }
+  return rez;
+  //vrati rez
+}
+
+function largestPairSum(numbers) {
+  if (numbers[0] > numbers[1]) {
+    //ukoliko je br pod indexom 0 veci od br pod indexom 1
+    let first = numbers[0];
+    //pravimo varijablu prvi koja ima vrednost broja sa prvog indexa
+    let second = numbers[1];
+    //pravimo varijablu drugi koja ima vrednost broja sa drugog indexa
+  }
+  //u slucaju da nije veci
+  else {
+    first = numbers[1];
+    //pravimo varijablu prvi koja ima vrednost broja sa drugog indexa
+    second = numbers[0];
+    //pravimo varijablu drugi koja ima vrednost broja sa prvog indexa
+  }
+  for (
+    let i = 2;
+    i < numbers.length;
+    i++
+  ) //prolazimo kroz niz i trazimo dva najveca broja od ostatka niza
+  {
+    if (numbers[i] > first) {
+      //ukoliko je trenutni element sa indexom i veci od prvog
+      second = first;
+      first = numbers[i];
+    } else if (numbers[i] > second && numbers[i] != first)
+      //ukoliko nam je niz po indexom i veci od drugog broja
+      second = numbers[i];
+  }
+  return first + second;
 }
