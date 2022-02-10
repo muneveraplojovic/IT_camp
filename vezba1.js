@@ -1328,19 +1328,66 @@
 //cuvamo adresu referencu
 
 // Object.keys
-// object.values
-covek1 = {
-  name: "Munevera",
-  surname: "Plojovic",
-  job: function () {
-    console.log("Neki tekst");
+// // object.values
+// covek1 = {
+//   name: "Munevera",
+//   surname: "Plojovic",
+//   job: function () {
+//     console.log("Neki tekst");
+//   },
+//   location: {
+//     city: "Np",
+//   },
+// };
+// console.log(covek1);
+// covek1.job();
+// covek2 = { ...covek1 };
+// //uzima propertije i vrednosti covek1
+// console.log(covek1.location.city);
+
+// var student = {
+//   name: "David Rayy",
+//   sclass: "VI",
+//   rollno: 12,
+// };
+
+// console.log(Object.keys(student));
+
+var library = [
+  {
+    author: "Bill Gates",
+    title: "The Road Ahead",
+    readingStatus: true,
   },
-  location: {
-    city: "Np",
+  {
+    author: "Steve Jobs",
+    title: "Walter Isaacson",
+    readingStatus: true,
   },
-};
-console.log(covek1);
-covek1.job();
-covek2 = { ...covek1 };
-//uzima propertije i vrednosti covek1
-console.log(covek1.location.city);
+  {
+    author: "Suzanne Collins",
+    title: "Mockingjay: The Final Book of The Hunger Games",
+    readingStatus: false,
+  },
+];
+for (let i = 0; i < library.length; i++) {
+  if (library[i].readingStatus) {
+    console.log(library[i].readingStatus);
+  } else {
+    console.log(library[i].readingStatus);
+  }
+  book = library[i].readingStatus;
+}
+// console.log(library);
+// console.log("===========================");
+// console.log(library.readingStatus);
+
+var library = [
+  {
+    author: "Bill Gates",
+    title: "The Road Ahead",
+    readingStatus: true,
+  },
+];
+
+console.log(library.readingStatus);
