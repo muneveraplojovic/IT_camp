@@ -1227,19 +1227,6 @@
 // }
 // console.log(stray([1, 1, 1, 1, 1, 1, 2, 2]));
 
-// function nbYear(p0, percent, aug, p) {
-//   var rez = 0; //rez var
-//   while (p0 < p) {
-//     //sve dok je p0(populacija na pocetku godine) manje od p (populacija)
-//     p0 = p0 + p0 * percent + aug;
-//     //populacija na pocetku god = ppg+ppg*procenat rasta populacije...
-//     rez++;
-//     //uvecavaj rez
-//   }
-//   return rez;
-//   //vrati rez
-// }
-
 // function largestPairSum(numbers) {
 //   if (numbers[0] > numbers[1]) {
 //     //ukoliko je br pod indexom 0 veci od br pod indexom 1
@@ -1277,21 +1264,83 @@
 //   //       break;
 //   //     }
 //   //   }
+
+// arr = [3, 44, 38, 5, 47, 15, 36, 26, 27, 2, 46, 4, 19, 50, 48];
+
+// arrNew = [];
+
+// for (let i = 0; i < arr.length; i++) {
+//   for (let j = i + 1; j >= 0; j--) {
+//     if (arr[j] < arr[j - 1]) {
+//       let pomVar = arr[j];
+//       arr[j] = arr[j - 1];
+//       arr[j - 1] = pomVar;
+//     } else {
+//       break;
+//     }
+//   }
+// }
+// console.log(arr[arr.length - 1] + arr[arr.length - 2]);
+
+// function nbYear(p0, percent, aug, p) {
+//   var rez = 0; //rez var
+//   while (p0 < p) {
+//     //sve dok je p0(populacija na pocetku godine) manje od p (populacija)
+//     p0 = p0 + (p0 * percent) / 100 + aug;
+//     //populacija na pocetku god = ppg+ppg*procenat rasta populacije...
+//     rez++;
+//     //uvecavaj rez
+//   }
+//   return rez;
+//   //vrati rez
+// }
+
+// function openOrSenior(data){
+//   return data.map(function(d){
+//     return d[0] >= 55 && d[1] > 7 ? 'Senior' : 'Open';
+//   });
+// }
+
+// function openOrSenior(data){
+//   var result = [];
+//   data.forEach(function(member) {
+//     if(member[0] >= 55 && member[1] > 7) {
+//       result.push('Senior');
+//     } else {
+//       result.push('Open');
+//     }
+//   })
+//   return result;
+// }
+
+// function openOrSenior(data){
+//   pomVar=[]
+// for (let i = 0; i < data.length; i++) {
+//   if(data[i][0]>55 && data){
+
+//   }
+// }
+// }
 //insertion sort
 
-arr = [3, 44, 38, 5, 47, 15, 36, 26, 27, 2, 46, 4, 19, 50, 48];
+//iife
+//objekti-grupisanje odredjenih log vrednosti
+//cuvamo adresu referencu
 
-arrNew = [];
-
-for (let i = 0; i < arr.length; i++) {
-  for (let j = i + 1; j >= 0; j--) {
-    if (arr[j] < arr[j - 1]) {
-      let pomVar = arr[j];
-      arr[j] = arr[j - 1];
-      arr[j - 1] = pomVar;
-    } else {
-      break;
-    }
-  }
-}
-console.log(arr[arr.length - 1] + arr[arr.length - 2]);
+// Object.keys
+// object.values
+covek1 = {
+  name: "Munevera",
+  surname: "Plojovic",
+  job: function () {
+    console.log("Neki tekst");
+  },
+  location: {
+    city: "Np",
+  },
+};
+console.log(covek1);
+covek1.job();
+covek2 = { ...covek1 };
+//uzima propertije i vrednosti covek1
+console.log(covek1.location.city);
