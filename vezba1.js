@@ -1352,42 +1352,121 @@
 // };
 
 // console.log(Object.keys(student));
+// //-------------------------------------------------------
+// var library = [
+//   {
+//     author: "Bill Gates",
+//     title: "The Road Ahead",
+//     readingStatus: true,
+//   },
+//   {
+//     author: "Steve Jobs",
+//     title: "Walter Isaacson",
+//     readingStatus: true,
+//   },
+//   {
+//     author: "Suzanne Collins",
+//     title: "Mockingjay: The Final Book of The Hunger Games",
+//     readingStatus: false,
+//   },
+// ];
+// for (let i = 0; i < library.length; i++) {
+//   if (library[i].readingStatus) {
+//     console.log("procitno je", library[i].readingStatus);
+//   } else {
+//     console.log("Nije procitano", library[i].readingStatus);
+//   }
+// }
 
-var library = [
-  {
-    author: "Bill Gates",
-    title: "The Road Ahead",
-    readingStatus: true,
-  },
-  {
-    author: "Steve Jobs",
-    title: "Walter Isaacson",
-    readingStatus: true,
-  },
-  {
-    author: "Suzanne Collins",
-    title: "Mockingjay: The Final Book of The Hunger Games",
-    readingStatus: false,
-  },
-];
-for (let i = 0; i < library.length; i++) {
-  if (library[i].readingStatus) {
-    console.log(library[i].readingStatus);
-  } else {
-    console.log(library[i].readingStatus);
-  }
-  book = library[i].readingStatus;
-}
+// book = library[i].readingStatus;
 // console.log(library);
 // console.log("===========================");
 // console.log(library.readingStatus);
 
-var library = [
-  {
-    author: "Bill Gates",
-    title: "The Road Ahead",
-    readingStatus: true,
-  },
-];
+// var library = [
+//   {
+//     author: "Bill Gates",
+//     title: "The Road Ahead",
+//     readingStatus: true,
+//   },
+// ];
 
-console.log(library.readingStatus);
+// console.log(library.readingStatus);
+
+// class- ---------------
+//obj orijentisano programiranje
+//contructor
+//istanca klase
+//this za istancu
+
+// class Car {
+//   constructor(name, year) {
+//     this.name = name;
+//     this.year = year;
+//   }
+// }
+
+// c1 = new Car("audo", 534);
+// c2 = new Car("mercedes", 354);
+// console.log(c1);
+// console.log(c2);
+//kontruktor je funkcija
+// class Car {
+//   constructor(name, year) {
+//     this.name = name;
+//     this.year = year;
+//   }
+//   age() {
+//     let date = new Date();
+//     return date.getFullYear() - this.year;
+//   }
+// }
+
+// c1 = new Car("audo", 534);
+// c2 = new Car("mercedes", 354);
+// console.log(c1);
+// console.log(c2);
+
+// class Cat {
+//   constructor(name, year, hair, eyes) {
+//     this.name = name;
+//     this.year = year;
+//     this.hair = hair;
+//     this.eyes = eyes;
+//   }
+// }
+
+// c1 = new Cat("Kiki", 2, "brown", "blue");
+// c2 = new Cat("Lila", 1.5, "grey", "black");
+
+// console.log(c1);
+// console.log(c2);
+
+//objekat
+//napravimo drugi objekat
+//zamenimo
+
+// n1 = {
+//   name: "Munevera",
+//   surname: "Plojovic",
+// };
+// n2 = {};
+// // n1 = Object.keys(n2);
+// // n2 = Object.values(n1);
+
+// // console.log(Object.keys);
+// // console.log(Object.values);
+// // console.log(Object.entries);
+// //niz podnizova
+// //object.entries
+// let q = Object.entries(n1);
+// for (let i = 0; i < q.length; i++) {
+//   console.log(q[i]);
+//   n2[q[i][1]] = q[i][0];
+// }
+// console.log(n1);
+// console.log(n2);
+
+function pr() {}
+
+//if property surnam se nalazi u datom objektu
