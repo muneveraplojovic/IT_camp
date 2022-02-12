@@ -1470,3 +1470,48 @@
 function pr() {}
 
 //if property surnam se nalazi u datom objektu
+
+// -------------------------------------------
+
+//---------------------------------------------------------------------------------------------
+//klasa sa konstruktorom
+
+// BookList= {
+//   constructor(bookRead, notReadBook,nextBook, currentBook, lastBook)
+//   {
+//     this.bookRead = bookRead ;
+//     this.notReadBook = notReadBook ;
+//     this.nextBook = nextBook ;
+//     this.currentBook = currentBook ;
+//     this.lastBook = lastBook ;
+
+//   }}
+//   Books= ["knjiga1", "knjiga2", "knjiga3"  ]
+//   Book= {
+//   constructor(title, genre, author, read, readDate) {
+//   this.title = title ;
+//   this.genre = genre;
+//   this.author = author ;
+//   this.read = read;
+//   this.readDate = new Date(readDate);
+//   } }
+
+unosKnjiga = String(prompt("Unesite knjigu:"));
+unosAutor = String(prompt("Unesite autora:"));
+console.log("Knjiga koju ste uneli je:", unosKnjiga);
+console.log("Autor vase knjige je:", unosAutor);
+
+// currentBook (Books){
+//   if (!typeof books == "array") {
+//     books = false
+//   }}
+//   this.bookShelf = books || 'array'
+
+//   if (this.bookShelf.length > 0) {
+//   }
+//kada se unese knjiga, knjigu ubacujemo u niz sa knjigama koje vec imamo
+//ukoliko se uneta knjiga nalazi u nizu, ispisacemo da je knjiga vec procitana
+//ukoliko uneta knjiga se nalazi u nizu2, i nije procitana, ispisujemo knjiga jos uvek nije procitana
+//ukoliko se uneta knjiga ne nalazi u oba niza, postavljamo pitanje da li zelite da dodate knjigu na listu
+//po zavrsetku programa, ispisujemo listu procitanih, listu ne procitanih, i listu novih knjiga
+//takodje izbacujemo listu autora, zanr
