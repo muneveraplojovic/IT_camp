@@ -1587,97 +1587,139 @@
 // bookList.add(b3)
 // bookList.add(b4)
 // bookList.add(b5)
+//-----------------------------------------------------------------------------------------------------
+// class Book {
+//   constructor(title = "", genre, author) {
+//     this.title = title;
+//     this.genre = genre;
+//     this.author = author;
+//     this.read = false;
+//     this.read_date = null;
+//   }
+// }
+// // napravimo klasu Book, citanje racunamo false sve dok se ne procita
+// class BookLists {
+//   constructor() {
+//     this.bookShelf = [];
+//     this.booksRead = 0;
+//     this.notBooksRead = this.bookShelf.length - this.booksRead;
+//     this.nextBook = null;
+//     this.currBook = null;
+//     this.lastBook = null;
+//   }
+//   // druga klasa u kojoj imamo "policu sa knjigama", niz, procitanih knjiga 0
+//   add(book) {
+//     if (book instanceof Book) {
+//       this.bookShelf.push(book);
+//       //dodamo knjigu ukoliko je ona istanca od Book
+//       for (let i = 0; i < this.bookShelf.length; i++) {
+//         if (!this.bookShelf[i].read) {
+//           this.currBook = this.bookShelf[i];
+//           //ukoliko data knjiga nij procitana, dodamo da je currBook
+//           if (this.bookShelf[i + 1]) {
+//             this.nextBook = this.bookShelf[i + 1];
+//             //ukoliko postoji sledeca knjiga dodamo je na nextBook
+//           } else {
+//             this.nextBook = null;
+//           }
+//           //ukoliko nema sledeca ispisujemo null i brejkamo kod
+//           break;
+//         }
+//       }
+//     } else {
+//       console.log("Invalid argument type");
+//     }
+//   }
 
-class Book {
-  constructor(title = "", genre, author) {
-    this.title = title;
-    this.genre = genre;
-    this.author = author;
-    this.read = false;
-    this.read_date = null;
-  }
-}
+//   finishCurrentBook() {
+//     for (let i = 0; i < this.bookShelf.length; i++) {
+//       //prodjemo kroz "policu sa knjigama"
+//       const book = this.bookShelf[i];
+//       //u pomocnoj varijabli smestimo sve knjige sa indexom i
+//       if (book.title === this.currBook.title) {
+//         //ukoliko je naslov knjige jedna naslovu trenutne knjige
+//         this.bookShelf[i].read = true;
+//         //oznaci da je data knjiga iz "police" procitana
+//         this.bookShelf[i].read_date = new Date();
+//         //oznaci vreme citanje knjige
+//         this.lastBook = this.currBook;
+//         // trenutna knjiga postaje zanja knjiga
+//         this.currBook = this.nextBook;
+//         //sledeca knjiga postaje trenutna
+//         if (this.bookShelf[i + 1]) {
+//           this.nextBook = this.bookShelf[i + 2];
+//         }
+//         break;
+//       }
+//     }
+//   }
+// }
 
-class BookLists {
-  constructor() {
-    this.bookShelf = [];
-    this.booksRead = 0;
-    this.notBooksRead = this.bookShelf.length - this.booksRead;
-    this.nextBook = null;
-    this.currBook = null;
-    this.lastBook = null;
-  }
+// b1 = new Book("HP1", "magic", "JKR");
+// b2 = new Book("HP2", "magic", "JKR");
+// b3 = new Book("HP3", "magic", "JKR");
+// b4 = new Book("HP4", "magic", "JKR");
+// b5 = new Book("HP5", "magic", "JKR");
 
-  add(book) {
-    if (book instanceof Book) {
-      this.bookShelf.push(book);
+// bl = new BookLists();
 
-      for (let i = 0; i < this.bookShelf.length; i++) {
-        if (!this.bookShelf[i].read) {
-          this.currBook = this.bookShelf[i];
-          if (this.bookShelf[i + 1]) {
-            this.nextBook = this.bookShelf[i + 1];
-          } else {
-            this.nextBook = null;
-          }
-          break;
-        }
-      }
-    } else {
-      console.log("Invalid argument type");
-    }
-  }
+// bl.add(b1);
+// bl.add(b2);
+// bl.add(b3);
+// bl.add(b4);
+// bl.add(b5);
 
-  finishCurrentBook() {
-    for (let i = 0; i < this.bookShelf.length; i++) {
-      const book = this.bookShelf[i];
-      if (book.title === this.currBook.title) {
-        this.bookShelf[i].read = true;
-        this.bookShelf[i].read_date = new Date();
-        this.lastBook = this.currBook;
-        this.currBook = this.nextBook;
-        if (this.bookShelf[i + 1]) {
-          this.nextBook = this.bookShelf[i + 2];
-        }
-        break;
-      }
-    }
-  }
-}
+// console.log(bl.lastBook);
+// console.log(bl.currBook);
+// console.log(bl.nextBook);
 
-b1 = new Book("HP1", "magic", "JKR");
-b2 = new Book("HP2", "magic", "JKR");
-b3 = new Book("HP3", "magic", "JKR");
-b4 = new Book("HP4", "magic", "JKR");
-b5 = new Book("HP5", "magic", "JKR");
+// bl.finishCurrentBook();
 
-bl = new BookLists();
+// console.log("=========================");
+// console.log(bl.lastBook);
+// console.log(bl.currBook);
+// console.log(bl.nextBook);
 
-bl.add(b1);
-bl.add(b2);
-bl.add(b3);
-bl.add(b4);
-bl.add(b5);
+// bl.finishCurrentBook();
+// bl.finishCurrentBook();
+// bl.finishCurrentBook();
+// bl.finishCurrentBook();
 
-console.log(bl.lastBook);
-console.log(bl.currBook);
-console.log(bl.nextBook);
+// console.log("=========================");
+// console.log(bl.lastBook);
+// console.log(bl.currBook);
+// console.log(bl.nextBook);
 
-bl.finishCurrentBook();
+// console.log(bl.bookShelf);
 
-console.log("=========================");
-console.log(bl.lastBook);
-console.log(bl.currBook);
-console.log(bl.nextBook);
+// cat={
+//   tiredness: 0,
+//   hunger: 0,
+//   lonliness :0,
+//   happiness: 0,
+// }
+// --------------------------------------------------------------------------
+var cat = {
+  tiredness: 0,
+  hunger: 0,
+  lonliness: 0,
+  happiness: 0,
+  play: function () {
+    this.hunger += 5;
+    this.hunger += 5;
+    this.happiness += 20;
+  },
+  eat: function () {
+    this.hunger -= 5;
+    this.happiness += 5;
+  },
+  pet: function () {
+    this.lonliness -= 5;
+    this.tiredness += 5;
+  },
+  sleep: function () {
+    this.tiredness -= 5;
+  },
+};
 
-bl.finishCurrentBook();
-bl.finishCurrentBook();
-bl.finishCurrentBook();
-bl.finishCurrentBook();
-
-console.log("=========================");
-console.log(bl.lastBook);
-console.log(bl.currBook);
-console.log(bl.nextBook);
-
-console.log(bl.bookShelf);
+console.log(play());
