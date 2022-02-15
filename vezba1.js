@@ -1699,18 +1699,41 @@
 //   happiness: 0,
 // }
 // --------------------------------------------------------------------------
-var cat = {
-  tiredness: 0,
-  hunger: 0,
-  lonliness: 0,
-  happiness: 0,
+// var cat = {
+//   tiredness: 0,
+//   hunger: 0,
+//   lonliness: 0,
+//   happiness: 0,
 
-  eat: function () {
-    this.hunger -= 5;
-    this.happiness += 5;
-  },
+//   eat: function () {
+//     this.hunger -= 5;
+//     this.happiness += 5;
+//   },
 
-  sleep: function () {
-    this.tiredness -= 5;
-  },
-};
+//   sleep: function () {
+//     this.tiredness -= 5;
+//   },
+// };
+//object.entiries, keys. value, includes, call metoda za pozivanje
+//apply= alje smao kao niz
+//bind=
+//w3docs
+
+//add.
+//-skup propertija koje se satoje iz kljucnih reci
+//objekti, klase. for
+
+//proverimo da li neki objekat sadrzi neki el
+
+// a1 = {
+//   name: "mwkld",
+//   surname: "mwkldsd",
+//   edo: function () {
+//     console.log(name, surname);
+//   },
+// };
+// console.log(Object.keys(a1).includes("name"));
+// a1.edo();
+
+// add.call(bookShelf, {})
+//isti objekat sa propertima a funkcija istanca
