@@ -1713,17 +1713,6 @@
 //   sleep: function () {
 //     this.tiredness -= 5;
 //   },
-// };
-//object.entiries, keys. value, includes, call metoda za pozivanje
-//apply= alje smao kao niz
-//bind=
-//w3docs
-
-//add.
-//-skup propertija koje se satoje iz kljucnih reci
-//objekti, klase. for
-
-//proverimo da li neki objekat sadrzi neki el
 
 // a1 = {
 //   name: "mwkld",
@@ -1737,3 +1726,16 @@
 
 // add.call(bookShelf, {})
 //isti objekat sa propertima a funkcija istanca
+
+// };
+
+//object.entiries, keys. value, includes, call metoda za pozivanje
+//apply= alje smao kao niz
+//bind=
+//w3docs
+
+//add.
+//-skup propertija koje se satoje iz kljucnih reci
+//objekti, klase. for
+//hoisting-------
+//proverimo da li neki objekat sadrzi neki el
