@@ -1789,7 +1789,45 @@
 //objekti, klase. for
 //hoisting-------
 //proverimo da li neki objekat sadrzi neki el
-// //stack
+// //stack-vrsi se iyvrsavanje javascript
 // // sinhrono izvrsavamke
 // setTimeout
 // asinhroni javascript
+//web api
+//que
+//event loop javascript - medium.com
+//mehanizam call back
+
+// function work(arg) {
+//     //pravimo funkciju sa argumentom u kome cemo da sacuvamo referencu objekta
+//   console.log("sdffz");
+//   arg();
+//   //pozivamo argument da se izvrsi koji se nalazi dole
+// }
+
+// work(() => {
+//     //pozivamo prvu funkciju i dajemo joj argument objekat
+//   console.log("afs");
+// });
+// //adresu ove funk sacuvamo u argumentu kod worka
+
+// cars = [65, 6884, 4, 4, 54, 5];
+
+// // for (let i = 0; i < cars.length; i++) {
+// //     const element = cars[i];
+
+// // }
+// cars.forEach((el, index) => {
+//   console.log(el);
+//   console.log(index);
+// });
+//high order function
+// //forEach
+
+function wash(callback) {}
+
+function dry(callback) {}
+
+function fold(callback) {}
+
+doLaundry();
