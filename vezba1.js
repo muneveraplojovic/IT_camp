@@ -1824,10 +1824,11 @@
 //high order function
 // //forEach
 
-function wash(callback) {}
+// function doLaundry() {
+//   function wash() {}
 
-function dry(callback) {}
+//   function dry() {}
 
-function fold(callback) {}
-
-doLaundry();
+//   function fold() {}
+// }
+// doLaundry();
