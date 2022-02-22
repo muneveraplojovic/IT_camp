@@ -1755,15 +1755,6 @@
 //argumenti-funkcija, da delovu funkcije budu promenljivi
 //tipovi podataka- primitivni i referntni
 //of-u nizu, for petlji
-//map-vraca niz iste duzine, mora da bude isti lenght
-//lastIndexOf-daje nam indekse
-//data.find- vraca prvi elemnt koji ispunjava ovaj uslov
-//data.map- primeni funkciju i vrati novi niz;
-//data.filter-dobija funkciju,  na osnovu uslova on nama taj el vraca;
-//data.every-saljemo funkciju, vraca nam da li svi el u nizu ispunjavaju uslov true/false
-//data. some-da li barem jedan ispunjava niz
-//forEach-metoda niza-dobija funkciju-kao for petlja-za svaki element izvrsi ovu funkciju
-//algoritam-sort
 
 //3 nacina pisanja funkcija
 //deklaracija funkcija function say(){}
@@ -1797,19 +1788,8 @@
 //que
 //event loop javascript - medium.com
 //mehanizam call back
-
-// function work(arg) {
-//     //pravimo funkciju sa argumentom u kome cemo da sacuvamo referencu objekta
-//   console.log("sdffz");
-//   arg();
-//   //pozivamo argument da se izvrsi koji se nalazi dole
-// }
-
-// work(() => {
-//     //pozivamo prvu funkciju i dajemo joj argument objekat
-//   console.log("afs");
-// });
-// //adresu ove funk sacuvamo u argumentu kod worka
+//high order function
+// //forEach
 
 // cars = [65, 6884, 4, 4, 54, 5];
 
@@ -1821,8 +1801,6 @@
 //   console.log(el);
 //   console.log(index);
 // });
-//high order function
-// //forEach
 
 // function doLaundry() {
 //   function wash() {}
@@ -1832,3 +1810,97 @@
 //   function fold() {}
 // }
 // doLaundry();
+
+// function work(arg) {
+//     //pravimo funkciju sa argumentom u kome cemo da sacuvamo referencu objekta
+//   console.log("sdffz");
+//   arg();
+//   //pozivamo argument da se izvrsi koji se nalazi dole
+// work(() => {
+//     //pozivamo prvu funkciju i dajemo joj argument objekat
+//   console.log("afs");
+// });
+// //adresu ove funk sacuvamo u argumentu kod worka
+// }
+
+//map-vraca niz iste duzine, mora da bude isti lenght
+//lastIndexOf-daje nam indekse
+//data.find- vraca prvi elemnt koji ispunjava ovaj uslov
+//data.map- primeni funkciju i vrati novi niz;
+//data.filter-dobija funkciju,  na osnovu uslova on nama taj el vraca;
+//data.every-saljemo funkciju, vraca nam da li svi el u nizu ispunjavaju uslov true/false
+//data. some-da li barem jedan ispunjava niz
+//forEach-metoda niza-dobija funkciju-kao for petlja-za svaki element izvrsi ovu funkciju
+//algoritam-sort
+
+//forEach - callback
+
+// var d= [1,2,3,4,5]
+// const mojaF=(a,b,c){
+//     console.log(a);
+// }
+//  mojaF()
+
+// const number = [37, 28, 14, 6, 19, 55, 11];
+
+// const funk = (a) => {};
+
+// number.forEach(funk);
+
+// const number = [37, 28, 14, 6, 19, 55, 11];
+
+// numbers.forEach((a, b) => {
+//   console.log("Broj ", a, "je na pozicji ", b);
+// });
+
+// var autori = [
+//   {
+//     autor: "bill",
+//   },
+//   {
+//     autor: "steve",
+//   },
+//   {
+//     autor: "kim",
+//   },
+// ];
+
+// autori.forEach((auto) => {
+//   console.log(auto.autor);
+// });
+
+// const number = [45, 4, 9, 16, 25, 13, 38];
+// const evenNumbers = [];
+
+// number.forEach((el) => {
+//   if (el % 2 === 0) {
+//     evenNumbers.push(el);
+//   }
+// });
+// console.log(evenNumbers);
+
+// let str = "the quick brow fox";
+// newStr = str.split("");
+// a = "";
+// newStr.forEach((k, i) => {
+//   if (i % 2 === 0) {
+//     a += k.toUpperCase();
+
+//     sk.push(k);
+//   } else {
+//     a += k.toLowerCase();
+
+//     a.push(k);
+//   }
+// });
+// console.log(a);
+
+data = [NaN, 0, 15, false, -22, "", undefined, 47, null];
+dataNew = 0;
+data.forEach((el, i) => {
+  if (!el) {
+    // dataNew.push(el);
+    dataNew++;
+  }
+});
+console.log(dataNew);
