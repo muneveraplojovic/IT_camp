@@ -1895,12 +1895,13 @@
 // });
 // console.log(a);
 
-data = [NaN, 0, 15, false, -22, "", undefined, 47, null];
-dataNew = 0;
-data.forEach((el, i) => {
-  if (!el) {
-    // dataNew.push(el);
-    dataNew++;
-  }
-});
-console.log(dataNew);
+// data = [NaN, 0, 15, false, -22, "", undefined, 47, null];
+// dataNew = 0;
+// data.forEach((el, i) => {
+//   if (!el) {
+//     // dataNew.push(el);
+//     dataNew++;
+//   }
+// });
+// console.log(dataNew);
+lifjkjdsi;
