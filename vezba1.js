@@ -1919,16 +1919,6 @@
 //   console.log("clb namelless");
 // });
 
-// const data = [NaN, 0, 15, false, -22, "", undefined, 47, null];
-
-// data.forEach((el) => {
-//   console.log(el);
-// });
-// arr1 = data.map((el) => {
-//   return el + "novi el";
-// });
-// console.log(arr1);
-
 // arr1 = data.map((el) => {
 //   if (typeof el === "number") {
 //     return el;
@@ -1998,3 +1988,36 @@
 
 // res = findMissing([6, 1, 3, 6, 8, 2], [3, 6, , 6, 1, 2]);
 // console.log(res);
+
+// const data = [NaN, 0, 15, false, -22, "", undefined, 47, null];
+
+// data.forEach((el) => {
+//   console.log(el);
+// });
+// arr1 = data.map((el) => {
+//   return el + "novi el";
+// });
+// console.log(arr1);
+
+// const heros = [
+//   {
+//     name: "John1",
+//   },
+//   {
+//     name: "John2",
+//   },
+//   {
+//     name: "John3",
+//   },
+//   {
+//     name: "John4",
+//   },
+// ];
+
+// arr1 = heros.map((el, index) => {
+//   return {
+//     id: index,
+//     hero: el.name,
+//   };
+// });
+// console.log(arr1);
