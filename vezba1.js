@@ -1821,17 +1821,6 @@
 //   console.log("afs");
 // });
 // //adresu ove funk sacuvamo u argumentu kod worka
-// }
-
-//map-vraca niz iste duzine, mora da bude isti lenght
-//lastIndexOf-daje nam indekse
-//data.find- vraca prvi elemnt koji ispunjava ovaj uslov
-//data.map- primeni funkciju i vrati novi niz;
-//data.filter-dobija funkciju,  na osnovu uslova on nama taj el vraca;
-//data.every-saljemo funkciju, vraca nam da li svi el u nizu ispunjavaju uslov true/false
-//data. some-da li barem jedan ispunjava niz
-//forEach-metoda niza-dobija funkciju-kao for petlja-za svaki element izvrsi ovu funkciju
-//algoritam-sort
 
 //forEach - callback
 
@@ -1904,4 +1893,108 @@
 //   }
 // });
 // console.log(dataNew);
+// }
 
+//metoda niza koja prosledjuje funkciju
+//callback
+
+//asinhroni Javascript se sastoji od:
+//call stack
+//web api
+//que
+
+//saljemo funk kao argument i pozivamo na kraju
+
+// function f1 (){
+//     console.log('f1');
+// // }
+// const job = (clb) => {
+//   console.log("sdf");
+//   clb();
+// };
+
+// // job(f1)
+
+// job(() => {
+//   console.log("clb namelless");
+// });
+
+// const data = [NaN, 0, 15, false, -22, "", undefined, 47, null];
+
+// data.forEach((el) => {
+//   console.log(el);
+// });
+// arr1 = data.map((el) => {
+//   return el + "novi el";
+// });
+// console.log(arr1);
+
+// arr1 = data.map((el) => {
+//   if (typeof el === "number") {
+//     return el;
+//   }
+// });
+
+// arr2 = data.filter((el) => {
+//   if (typeof el === "number") {
+//     return el;
+//   }
+// });
+// console.log(arr2);
+// console.log(arr1);
+
+//map-vraca niz iste duzine, mora da bude isti lenght
+//lastIndexOf-daje nam indekse
+//data.find- vraca prvi elemnt koji ispunjava ovaj uslov
+//data.map- primeni funkciju i vrati novi niz;
+//data.filter-dobija funkciju,  na osnovu uslova on nama taj el vraca;
+//ukoliko ispunjava uslov dodaje se u noviniz
+//data.every-saljemo funkciju, vraca nam da li svi el u nizu ispunjavaju uslov true/false
+//data. some-da li barem jedan el ispunjava  uslov niz, vraca true ili false
+
+//forEach-metoda niza-dobija funkciju-kao for petlja-za svaki element izvrsi ovu funkciju
+//algoritam-sort
+
+// arr2 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// res = arr2.some((el) => {
+//   return el > 6;
+// });
+// console.log(res);
+// console.log("--------------------------");
+
+// res2 = arr2.every((el) => {
+//   return el > 6;
+// });
+// console.log(res2);
+
+// if(!arr2.every((el) => {
+//     return el > 6})
+//     {
+// console.log("ispunjava");
+//     }else{
+//         console.log("neispunja");
+//     }
+
+// arr2 = [1, 2, 3, 4, 5];
+
+// const ukupno= arr2.reduce((prethodnaVrednost, trvrednost)=>{
+//     if (trvrednost %2===0) {
+//         return prethodnaVrednost + 1
+
+//     }else {
+//         return prethodnaVrednost
+//     }, 0
+// )
+
+// function findMissing(arr1, arr2) {
+//   arr2.forEach((el) => {
+//     if (arr1.includes(el)) {
+//       arr1.splice(arr1.indexOf(el), 1);
+//     }
+//   });
+//   return arr1[0];
+// }
+
+// res = findMissing([6, 1, 3, 6, 8, 2], [3, 6, , 6, 1, 2]);
+// console.log(res);
