@@ -2020,3 +2020,8 @@
 //que
 
 //saljemo funk kao argument i pozivamo na kraju
+
+var miles = Number(prompt("Unesite vrednost milja:"));
+const per = 0.6214;
+var kilometers = Math.floor(miles / per);
+console.log(miles + " mi iznosi:", kilometers + " km");
