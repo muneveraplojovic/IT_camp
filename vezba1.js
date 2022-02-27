@@ -1775,22 +1775,6 @@
 //bind=
 //w3docs
 
-//add.
-//-skup propertija koje se satoje iz kljucnih reci
-//objekti, klase. for
-//hoisting-------
-//proverimo da li neki objekat sadrzi neki el
-// //stack-vrsi se iyvrsavanje javascript
-// // sinhrono izvrsavamke
-// setTimeout
-// asinhroni javascript
-//web api
-//que
-//event loop javascript - medium.com
-//mehanizam call back
-//high order function
-// //forEach
-
 // cars = [65, 6884, 4, 4, 54, 5];
 
 // // for (let i = 0; i < cars.length; i++) {
@@ -1895,16 +1879,6 @@
 // console.log(dataNew);
 // }
 
-//metoda niza koja prosledjuje funkciju
-//callback
-
-//asinhroni Javascript se sastoji od:
-//call stack
-//web api
-//que
-
-//saljemo funk kao argument i pozivamo na kraju
-
 // function f1 (){
 //     console.log('f1');
 // // }
@@ -1932,18 +1906,6 @@
 // });
 // console.log(arr2);
 // console.log(arr1);
-
-//map-vraca niz iste duzine, mora da bude isti lenght
-//lastIndexOf-daje nam indekse
-//data.find- vraca prvi elemnt koji ispunjava ovaj uslov
-//data.map- primeni funkciju i vrati novi niz;
-//data.filter-dobija funkciju,  na osnovu uslova on nama taj el vraca;
-//ukoliko ispunjava uslov dodaje se u noviniz
-//data.every-saljemo funkciju, vraca nam da li svi el u nizu ispunjavaju uslov true/false
-//data. some-da li barem jedan el ispunjava  uslov niz, vraca true ili false
-
-//forEach-metoda niza-dobija funkciju-kao for petlja-za svaki element izvrsi ovu funkciju
-//algoritam-sort
 
 // arr2 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
@@ -2012,7 +1974,7 @@
 //   {
 //     name: "John4",
 //   },
-// ];
+// // ];
 
 // arr1 = heros.map((el, index) => {
 //   return {
@@ -2021,3 +1983,40 @@
 //   };
 // });
 // console.log(arr1);
+
+//add.
+//-skup propertija koje se satoje iz kljucnih reci
+//objekti, klase. for
+//hoisting-------
+//proverimo da li neki objekat sadrzi neki el
+// //stack-vrsi se iyvrsavanje javascript
+// // sinhrono izvrsavamke
+// setTimeout
+// asinhroni javascript
+//web api
+//que
+//event loop javascript - medium.com
+//mehanizam call back
+//high order function
+// //forEach
+
+//map-vraca niz iste duzine, mora da bude isti lenght
+//lastIndexOf-daje nam indekse
+//data.find- vraca prvi elemnt koji ispunjava ovaj uslov
+//data.map- primeni funkciju i vrati novi niz;
+//data.filter-dobija funkciju,  na osnovu uslova on nama taj el vraca;
+//ukoliko ispunjava uslov dodaje se u noviniz
+//data.every-saljemo funkciju, vraca nam da li svi el u nizu ispunjavaju uslov true/false
+//data. some-da li barem jedan el ispunjava  uslov niz, vraca true ili false
+//forEach-metoda niza-dobija funkciju-kao for petlja-za svaki element izvrsi ovu funkciju
+//algoritam-sort
+
+//metoda niza koja prosledjuje funkciju
+//callback
+
+//asinhroni Javascript se sastoji od:
+//call stack
+//web api
+//que
+
+//saljemo funk kao argument i pozivamo na kraju
