@@ -1976,14 +1976,6 @@
 //   },
 // // ];
 
-// arr1 = heros.map((el, index) => {
-//   return {
-//     id: index,
-//     hero: el.name,
-//   };
-// });
-// console.log(arr1);
-
 //add.
 //-skup propertija koje se satoje iz kljucnih reci
 //objekti, klase. for
@@ -2018,10 +2010,72 @@
 //call stack
 //web api
 //que
-
+//
 //saljemo funk kao argument i pozivamo na kraju
+
+// arr1 = heros.map((el, index) => {
+//   return {
+//     id: index,
+//     hero: el.name,
+//   };
+// });
+// console.log(arr1);
 
 // var miles = Number(prompt("Unesite vrednost milja:"));
 // const per = 0.6214;
 // var kilometers = Math.floor(miles / per);
 // console.log(miles + " mi iznosi:", kilometers + " km");
+//promise-odg +-====pending=cekanje
+//resolve=uspesno
+//reject= neuspesno
+
+// newStr.forEach((k, i) => {
+//   if (i % 2 === 0) {
+//     a += k.toUpperCase();
+
+//     sk.push(k);
+//   } else {
+//     a += k.toLowerCase();
+
+//     a.push(k);
+//   }
+// });
+// console.log(a);
+
+//callback
+//then= nakon izvrsenog posla izvrsi
+//catch
+//finally=radi neki posao uvekk
+//chaining
+//develeoper mozzila using promises
+
+let myPromise = new Promise(function (myResolve, myReject) {
+  let x = 0;
+  //   for (let index = 0; index < 15630; index++) {}
+  myResolve("ok");
+  myReject("eror");
+  if (x === 0) {
+    myResolve("ok");
+  } else {
+    myReject("eror");
+  }
+});
+
+// myPromise.then((value) => {
+//   console.log("then", value);
+// });
+
+myPromise
+  .then((value) => {
+    console.log("then", value);
+    return "value from 1 then";
+    //vrednost odavde value prebacuje uz pomoc return na sledeci then
+    //
+  })
+  .then((val) => {
+    console.log("2" + val);
+    console.log("3 then");
+  })
+  .catch((value) => {
+    console.log("catch", value);
+  });
