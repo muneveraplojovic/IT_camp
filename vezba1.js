@@ -2042,13 +2042,6 @@
 // });
 // console.log(a);
 
-//callback
-//then= nakon izvrsenog posla izvrsi
-//catch
-//finally=radi neki posao uvekk
-//chaining
-//develeoper mozzila using promises
-
 // let myPromise = new Promise(function (myResolve, myReject) {
 //   let x = 0;
 //   //   for (let index = 0; index < 15630; index++) {}
@@ -2114,3 +2107,10 @@
 // job().then((res) => {
 //   console.log(res);
 // });
+
+//callback
+//then= nakon izvrsenog posla izvrsi
+//catch
+//finally=radi neki posao uvekk
+//chaining
+//develeoper mozzila using promises
