@@ -2049,33 +2049,68 @@
 //chaining
 //develeoper mozzila using promises
 
-let myPromise = new Promise(function (myResolve, myReject) {
-  let x = 0;
-  //   for (let index = 0; index < 15630; index++) {}
-  myResolve("ok");
-  myReject("eror");
-  if (x === 0) {
-    myResolve("ok");
-  } else {
-    myReject("eror");
-  }
-});
-
-// myPromise.then((value) => {
-//   console.log("then", value);
+// let myPromise = new Promise(function (myResolve, myReject) {
+//   let x = 0;
+//   //   for (let index = 0; index < 15630; index++) {}
+//   myResolve("ok");
+//   myReject("eror");
+//   if (x === 0) {
+//     myResolve("ok");
+//   } else {
+//     myReject("eror");
+//   }
 // });
 
-myPromise
-  .then((value) => {
-    console.log("then", value);
-    return "value from 1 then";
-    //vrednost odavde value prebacuje uz pomoc return na sledeci then
-    //
-  })
-  .then((val) => {
-    console.log("2" + val);
-    console.log("3 then");
-  })
-  .catch((value) => {
-    console.log("catch", value);
-  });
+// // myPromise.then((value) => {
+// //   console.log("then", value);
+// // });
+
+// myPromise
+//   .then((value) => {
+//     console.log("then", value);
+//     return "value from 1 then";
+//     //vrednost odavde value prebacuje uz pomoc return na sledeci then
+//     //
+//   })
+//   .then((val) => {
+//     console.log("2" + val);
+//     console.log("3 then");
+//   })
+//   .catch((value) => {
+//     console.log("catch", value);
+// //   });
+// function job() {
+//   return "hello world";
+// }
+// let nPromise = new Promise(function (resolve, reject) {
+//   let res = job();
+//   setTimeout(() => {
+//     resolve(res);
+//   }, 2000);
+//   //vrednost ovog res se prenosi na argument val
+//   // resolve(job());
+// });
+
+//emedientli evolve
+
+// nPromise.then((val) => {
+//   console.log(val);
+// });
+
+// function job() {
+//   return "hello world";
+//   setTimeout = 2000;
+// }
+// funk = job();
+// console.log(funk);
+
+// function job() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve("hello world");
+//     }, 2000);
+//   });
+// }
+// job().then((res) => {
+//   console.log(res);
+// });
