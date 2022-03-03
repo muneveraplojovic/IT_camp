@@ -1992,27 +1992,6 @@
 //high order function
 // //forEach
 
-//map-vraca niz iste duzine, mora da bude isti lenght
-//lastIndexOf-daje nam indekse
-//data.find- vraca prvi elemnt koji ispunjava ovaj uslov
-//data.map- primeni funkciju i vrati novi niz;
-//data.filter-dobija funkciju,  na osnovu uslova on nama taj el vraca;
-//ukoliko ispunjava uslov dodaje se u noviniz
-//data.every-saljemo funkciju, vraca nam da li svi el u nizu ispunjavaju uslov true/false
-//data. some-da li barem jedan el ispunjava  uslov niz, vraca true ili false
-//forEach-metoda niza-dobija funkciju-kao for petlja-za svaki element izvrsi ovu funkciju
-//algoritam-sort
-
-//metoda niza koja prosledjuje funkciju
-//callback
-
-//asinhroni Javascript se sastoji od:
-//call stack
-//web api
-//que
-//
-//saljemo funk kao argument i pozivamo na kraju
-
 // arr1 = heros.map((el, index) => {
 //   return {
 //     id: index,
@@ -2020,14 +1999,6 @@
 //   };
 // });
 // console.log(arr1);
-
-// var miles = Number(prompt("Unesite vrednost milja:"));
-// const per = 0.6214;
-// var kilometers = Math.floor(miles / per);
-// console.log(miles + " mi iznosi:", kilometers + " km");
-//promise-odg +-====pending=cekanje
-//resolve=uspesno
-//reject= neuspesno
 
 // newStr.forEach((k, i) => {
 //   if (i % 2 === 0) {
@@ -2084,8 +2055,6 @@
 //   // resolve(job());
 // });
 
-//emedientli evolve
-
 // nPromise.then((val) => {
 //   console.log(val);
 // });
@@ -2108,9 +2077,61 @@
 //   console.log(res);
 // });
 
+//map-vraca niz iste duzine, mora da bude isti lenght
+//lastIndexOf-daje nam indekse
+//data.find- vraca prvi elemnt koji ispunjava ovaj uslov
+//data.map- primeni funkciju i vrati novi niz;
+//data.filter-dobija funkciju,  na osnovu uslova on nama taj el vraca;
+//ukoliko ispunjava uslov dodaje se u noviniz
+//data.every-saljemo funkciju, vraca nam da li svi el u nizu ispunjavaju uslov true/false
+//data. some-da li barem jedan el ispunjava  uslov niz, vraca true ili false
+//forEach-metoda niza-dobija funkciju-kao for petlja-za svaki element izvrsi ovu funkciju
+//algoritam-sort
+
+//metoda niza koja prosledjuje funkciju
 //callback
+
+//asinhroni Javascript se sastoji od:
+//call stack
+//web api
+//que
+//
+//saljemo funk kao argument i pozivamo na kraju
+
+// var miles = Number(prompt("Unesite vrednost milja:"));
+// const per = 0.6214;
+// var kilometers = Math.floor(miles / per);
+// console.log(miles + " mi iznosi:", kilometers + " km");
+//promise-odg +-====pending=cekanje
+//resolve=uspesno
+//reject= neuspesno
+
+//emedientli evolve
+//promises
+//callback=posaljemo funk u argument
 //then= nakon izvrsenog posla izvrsi
 //catch
 //finally=radi neki posao uvekk
 //chaining
 //develeoper mozzila using promises
+//nested promise chain= promesise sa 2 then-a
+//promise ide u micro task, kao vazniji
+
+//all= funkcija
+//prosledjvanje 2 pr kao argument
+
+// // [promise1, promise2, pormise3]
+// Promise.all().then(() => {
+//   console.log("promise all");
+// });
+//pitaju na interviju!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+//all= izbaciju niz ako su resolve a izbacujr rjecet za 1 koji je reject
+//race=prvo pr koji uradi svoj posao ide na catch
+//news= prvi koji se resolva ide na then
+//proxi dns
+//allSettled()
+//http-protokol
+//DOM pravimo app
+//objekti, nizove struk podata setovi hash mapa, metoda niza
+//
