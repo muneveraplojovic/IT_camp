@@ -2126,6 +2126,49 @@
 // });
 //pitaju na interviju!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+// Promise.resolve("prvi korak")
+//   .then((arg1) => {
+//     console.log(arg1);
+//     return "drugi korak";
+//   })
+//   .then((value) => {
+//     value.split("").forEach((l) => {
+//       console.log(l);
+//     });
+//     return value.slice(1);
+//   })
+//   .then((arg) => {
+//     let var1 = 0;
+//     console.log(var1 + arg.length * 5);
+//   });
+
+// async= vraca se direkt promise
+//  await
+// //typeOf
+// async function some() {
+//   return "prvi korak";
+// }
+
+// some()
+//   .then((arg1) => {
+//     console.log(arg1);
+//     return "drugi korak";
+//   })
+//   .then((value) => {
+//     value.split("").forEach((l) => {
+//       console.log(l);
+//     });
+//     return value.slice(1);
+//   })
+//   .then((arg) => {
+//     let var1 = 0;
+//     console.log(var1 + arg.length * 5);
+//   });
+
+//ovo sto sam slikala dodajem na to try catch
+
+//shadow copy x deep copy
+
 //all= izbaciju niz ako su resolve a izbacujr rjecet za 1 koji je reject
 //race=prvo pr koji uradi svoj posao ide na catch
 //news= prvi koji se resolva ide na then
@@ -2134,4 +2177,4 @@
 //http-protokol
 //DOM pravimo app
 //objekti, nizove struk podata setovi hash mapa, metoda niza
-//
+//try catch
