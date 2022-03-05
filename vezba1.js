@@ -2168,13 +2168,41 @@
 //ovo sto sam slikala dodajem na to try catch
 
 //shadow copy x deep copy
-
-//all= izbaciju niz ako su resolve a izbacujr rjecet za 1 koji je reject
-//race=prvo pr koji uradi svoj posao ide na catch
-//news= prvi koji se resolva ide na then
 //proxi dns
-//allSettled()
 //http-protokol
 //DOM pravimo app
 //objekti, nizove struk podata setovi hash mapa, metoda niza
 //try catch
+
+//all= izbaciju niz ako su resolve a izbacujr rjecet za 1 koji je reject
+//race=prvo pr koji uradi svoj posao ide na catch
+//news= prvi koji se resolva ide na then
+//allSettled()
+//throw
+//iffie
+
+// try {
+//   try {
+//     throw new Error("oops");
+//   } catch (ex) {
+//     console.error("inner", ex.message);
+//     throw ex;
+//   } finally {
+//     console.log("finally");
+//   }
+// } catch (ex) {
+//   console.error("outer", ex.message);
+// }
+
+// p-protokol-radnja po precizno odredjenim koracima
+//http- sastoji se od metoda za trazenje
+//http se sastoji iz dve osnovne radnje - request i response
+//2 delA Ima head i body
+//local host
+//get i post najkorisceniji
+//post-body.................put and patch
+//get-da uzmemo podate i da dobijemo response
+//request= u zavisnoti od metoda= metoda get head post put delete
+//request= header and body- stavljamo informacije da bismo dobili odgovor
+//response= header and body
+//statusni kod, http internet protokoli
