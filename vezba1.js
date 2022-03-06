@@ -2206,3 +2206,8 @@
 //request= header and body- stavljamo informacije da bismo dobili odgovor
 //response= header and body
 //statusni kod, http internet protokoli
+//https-
+//statusni kod-5-standard odgovora, kad dobijemo response prvo proveravamo koji je status kod
+
+//promise radimo rucno pravimo request and response do
+//web socket
