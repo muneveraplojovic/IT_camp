@@ -2167,20 +2167,6 @@
 
 //ovo sto sam slikala dodajem na to try catch
 
-//shadow copy x deep copy
-//proxi dns
-//http-protokol
-//DOM pravimo app
-//objekti, nizove struk podata setovi hash mapa, metoda niza
-//try catch
-
-//all= izbaciju niz ako su resolve a izbacujr rjecet za 1 koji je reject
-//race=prvo pr koji uradi svoj posao ide na catch
-//news= prvi koji se resolva ide na then
-//allSettled()
-//throw
-//iffie
-
 // try {
 //   try {
 //     throw new Error("oops");
@@ -2211,3 +2197,17 @@
 
 //promise radimo rucno pravimo request and response do
 //web socket
+
+//shadow copy x deep copy
+//proxi dns
+//http-protokol
+//DOM pravimo app
+//objekti, nizove struk podata setovi hash mapa, metoda niza
+//try catch
+
+//all= izbaciju niz ako su resolve a izbacujr rjecet za 1 koji je reject
+//race=prvo pr koji uradi svoj posao ide na catch
+//news= prvi koji se resolva ide na then
+//allSettled()
+//throw
+//iffie
