@@ -2210,4 +2210,32 @@
 //news= prvi koji se resolva ide na then
 //allSettled()
 //throw
-//iffie
+// //iffie
+// pormise-rezultat asinhrone radnje
+//fetch Api
+
+// fetch("https://catfact.ninja/facts")
+//   .then((response) => {
+//     return response.json();
+//   })
+//   .then((response) => {
+//     console.log(response);
+//   });
+
+// async function resp() {
+//   const res = await fetch("https://catfact.ninja/facts");
+//   const conJ = await res.json();
+//   console.log(conJ);
+// }
+// resp();
+
+// async function resp() {
+//   try {
+//     const res = await fetch("https://catfact.ninja/facts");
+//     const conJ = await res.json();
+//     console.log(conJ);
+//   } catch (err) {
+//     console.log("greska");
+//   }
+// }
+// resp();
