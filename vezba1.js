@@ -2239,3 +2239,18 @@
 //   }
 // }
 // resp();
+
+async function getData() {
+  try {
+    const response = await fetch("https://jsonplaceholder.typicode.com/users");
+    const convJ = await response.json();
+    //pretvaramo ga u njen body
+    console.log(convJ);
+  } catch (err) {
+    console.log("error");
+  }
+}
+getData();
+
+//catfact.ninja
+//3 da povuce
