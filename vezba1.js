@@ -2238,19 +2238,67 @@
 //     console.log("greska");
 //   }
 // }
-// resp();
+// // resp();
 
-async function getData() {
-  try {
-    const response = await fetch("https://jsonplaceholder.typicode.com/users");
-    const convJ = await response.json();
-    //pretvaramo ga u njen body
-    console.log(convJ);
-  } catch (err) {
-    console.log("error");
-  }
-}
-getData();
+// async function getData() {
+//   try {
+//     const response = await fetch("https://jsonplaceholder.typicode.com/users");
+//     const convJ = await response.json();
+//     //pretvaramo ga u njen body
+//     console.log(convJ);
+//   } catch (err) {
+//     console.log("error");
+//   }
+// }
+// getData();
 
 //catfact.ninja
-//3 da povuce
+// //3 da povuce
+// tsp
+//udp
+//brodcast
+//web socet-komunikacija izmedju klijenta i racunara
+//http v 101response 1.1
+//
+
+// async function getData() {
+//   try {
+//     const response = await fetch("https://catfact.ninja/fact");
+//     const convJ = await response.json();
+//     //pretvaramo ga u njen body
+//     // console.log(convJ);
+//   } catch (err) {
+//     console.log("error");
+//   }
+// }
+
+// usr = [];
+
+// getData().then((convJ) => {
+//   usr = convJ;
+//   console.log(usr);
+// });
+// getData();
+
+//DOM= document objcet element
+//HTML EMELEMENT OBJECT OB html xml svg
+// //finding html elememts
+// var src = document.getElementById("moj_div");
+// src.style.fontSize = "50px";
+// src.innerHTML = "novi text";
+// var subDiv= document.createElement("div");
+// subDiv.style.backgroundColor="red"
+// subDiv.style.border="1px solid black"
+// subDiv.style.width="100px"
+// subDiv.style.height="100px"
+// myDiv.appendChild(subDiv)
+
+// var src = document.getElementById("moj_div");
+// var subDiv = document.createElement("div");
+// subDiv.style = {
+//   width: "100px",
+//   height: "100px",
+//   backgroundColor: "red",
+//   border: "solid 1px black",
+// };
+// src.appendChild(subDiv);
