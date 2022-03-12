@@ -2303,6 +2303,11 @@
 // };
 // src.appendChild(subDiv);
 
+// JS DOM
+
+//
+//
+//
 // function generateCard(vals) {
 //   var subDiv = document.createElement("div");
 //   (subDiv.style.width = "200px"),
@@ -2333,3 +2338,20 @@
 //   .catch((err) => {
 //     console.log(err);
 //   });
+
+// closure
+//lexical scope
+
+// var e = 10;
+
+// function sum(a) {
+//   return function (b) {
+//     return function (c) {
+//       return function (d) {
+//         return a + b + c + d + e;
+//       };
+//     };
+//   };
+// }
+
+// console.log(sum(1)(2)(3)(4));
