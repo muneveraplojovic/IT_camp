@@ -2307,16 +2307,16 @@
 
 //
 //
-//
+
 // function generateCard(vals) {
 //   var subDiv = document.createElement("div");
 //   (subDiv.style.width = "200px"),
 //     (subDiv.style.height = "300px"),
-//     (subDiv.style.backgroundColor = "red"),
+//     (subDiv.style.backgroundColor = "pink"),
 //     (subDiv.style.border = "solid 1px black"),
 //     (subDiv.style.borderRadius = "10px");
+//   subDiv.style.padding = "5px";
 //   subDiv.style.margin = "10px";
-
 //   subDiv.innerHTML = vals.fact;
 //   return subDiv;
 // }
@@ -2355,3 +2355,24 @@
 // }
 
 // console.log(sum(1)(2)(3)(4));
+
+// for (var i = 0; i < 3; i++) {
+//   function fn() {
+//     console.log(i);
+//   }
+//   setTimeout(fn, 200);
+// }
+//petlja se okrece i u zadnjem pozivanju petlje i bude 3
+//zbog asinh js se 3 puta ispisuje we Api
+//ako stavimo let obuhvata samo ovaj deo:
+// //function fn() {
+//     console.log(i);
+//   }
+//innntervijuuu
+
+//scope clouser objekt niz hoistinh iife
+// call back async await
+//varijable event loop web api
+//producthunt.com/post/javascript-knowleage-map
+//learnjavascript.online/knowledge-map.html
+//paginacija
