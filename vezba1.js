@@ -2390,3 +2390,81 @@
 //   }
 //   setTimeout(log, 100);
 // }
+
+var src = document.getElementById("moj_div");
+src.style.fontSize = "50px";
+src.innerHTML = "novi text";
+var subDiv = document.createElement("div");
+subDiv.style.backgroundColor = "red";
+subDiv.style.border = "1px solid black";
+subDiv.style.width = "100px";
+subDiv.style.height = "100px";
+myDiv.appendChild(subDiv);
+
+subDiv.style = {
+  width: "100px",
+  height: "100px",
+  backgroundColor: "red",
+  border: "solid 1px black",
+};
+src.appendChild(subDiv);
+
+function pageNavigation(values) {
+  let nav = document.createElement("a");
+  nav.innerHTML = values.label;
+  if (values.active) {
+    nav.style.backgroundColor = "white";
+  }
+  if (!values.url) {
+    nav.classList.add("disabled-href");
+  }
+  nav.onclick = function (e) {
+    e.preventDefault();
+    fetchLink = values.url;
+    fetchData();
+  };
+  return nav;
+}
+
+function generateCard(values) {
+  var subDiv = document.createElement("div");
+  (subDiv.style.width = "200px"),
+    (subDiv.style.height = "300px"),
+    (subDiv.style.backgroundColor = "pink"),
+    (subDiv.style.border = "solid 1px black"),
+    (subDiv.style.borderRadius = "10px");
+  subDiv.style.fontSize = "20px";
+  subDiv.style.padding = "5px";
+  subDiv.style.margin = "10px";
+  subDiv.innerHTML = values.fact;
+  return subDiv;
+}
+
+function fetchData() {
+  fetch(fetchLink)
+    .then((res) => {
+      return res.json();
+    })
+    .then((res) => {
+      src.innerHTML = "";
+      for (let i = 0; i < res.data.length; i++) {
+        src.appendChild(generateCard(res.data[i]));
+      }
+      paginationSrc.innerHTML = "";
+      for (let i = 0; index < res.links.length; index++) {
+        paginationSrc.appendChild(pageNavigation(res.links[i]));
+      }
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+}
+
+var src = document.getElementById("moj_div");
+src.style.display = "flex";
+src.style.justifyContent = "flex-start";
+src.style.flexWrap = "wrap";
+
+var paginationSrc = document.getElementById("pagination_container");
+var fetchLink = "https://catfact.ninja/facts";
+fetchData();
