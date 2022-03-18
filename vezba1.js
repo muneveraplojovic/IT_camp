@@ -2391,80 +2391,204 @@
 //   setTimeout(log, 100);
 // }
 
-var src = document.getElementById("moj_div");
-src.style.fontSize = "50px";
-src.innerHTML = "novi text";
-var subDiv = document.createElement("div");
-subDiv.style.backgroundColor = "red";
-subDiv.style.border = "1px solid black";
-subDiv.style.width = "100px";
-subDiv.style.height = "100px";
-myDiv.appendChild(subDiv);
+// var src = document.getElementById("moj_div");
+// src.style.fontSize = "50px";
+// src.innerHTML = "novi text";
+// var subDiv = document.createElement("div");
+// subDiv.style.backgroundColor = "red";
+// subDiv.style.border = "1px solid black";
+// subDiv.style.width = "100px";
+// subDiv.style.height = "100px";
+// myDiv.appendChild(subDiv);
 
-subDiv.style = {
-  width: "100px",
-  height: "100px",
-  backgroundColor: "red",
-  border: "solid 1px black",
-};
-src.appendChild(subDiv);
+// subDiv.style = {
+//   width: "100px",
+//   height: "100px",
+//   backgroundColor: "red",
+//   border: "solid 1px black",
+// };
+// src.appendChild(subDiv);
 
-function pageNavigation(values) {
-  let nav = document.createElement("a");
-  nav.innerHTML = values.label;
-  if (values.active) {
-    nav.style.backgroundColor = "white";
-  }
-  if (!values.url) {
-    nav.classList.add("disabled-href");
-  }
-  nav.onclick = function (e) {
-    e.preventDefault();
-    fetchLink = values.url;
-    fetchData();
+// function pageNavigation(values) {
+//   let nav = document.createElement("a");
+//   nav.innerHTML = values.label;
+//   if (values.active) {
+//     nav.style.backgroundColor = "white";
+//   }
+//   if (!values.url) {
+//     nav.classList.add("disabled-href");
+//   }
+//   nav.onclick = function (e) {
+//     e.preventDefault();
+//     fetchLink = values.url;
+//     fetchData();
+//   };
+//   return nav;
+// }
+
+// function generateCard(values) {
+//   var subDiv = document.createElement("div");
+//   (subDiv.style.width = "200px"),
+//     (subDiv.style.height = "300px"),
+//     (subDiv.style.backgroundColor = "pink"),
+//     (subDiv.style.border = "solid 1px black"),
+//     (subDiv.style.borderRadius = "10px");
+//   subDiv.style.fontSize = "20px";
+//   subDiv.style.padding = "5px";
+//   subDiv.style.margin = "10px";
+//   subDiv.innerHTML = values.fact;
+//   return subDiv;
+// }
+
+// function fetchData() {
+//   fetch(fetchLink)
+//     .then((res) => {
+//       return res.json();
+//     })
+//     .then((res) => {
+//       src.innerHTML = "";
+//       for (let i = 0; i < res.data.length; i++) {
+//         src.appendChild(generateCard(res.data[i]));
+//       }
+//       paginationSrc.innerHTML = "";
+//       for (let i = 0; index < res.links.length; index++) {
+//         paginationSrc.appendChild(pageNavigation(res.links[i]));
+//       }
+//     })
+//     .catch((err) => {
+//       console.log(err);
+//     });
+// }
+
+// var src = document.getElementById("moj_div");
+// src.style.display = "flex";
+// src.style.justifyContent = "flex-start";
+// src.style.flexWrap = "wrap";
+
+// var paginationSrc = document.getElementById("pagination_container");
+// var fetchLink = "https://catfact.ninja/facts";
+// fetchData();
+
+// function pageNav(vals) {
+//   let nav = document.createElement("a");
+//   nav.innerHTML = vals.label;
+//   if (vals.active) {
+//     nav.style.backgroundColor = "white";
+//   }
+//   if (!vals.url) {
+//     nav.classList.add("disabled-href");
+//   }
+//   nav.onclick = function (e) {
+//     e.preventDefault();
+
+//     fetchLink = vals.url;
+//     fetchData();
+//   };
+//   return nav;
+// }
+
+// function generateCard(vals) {
+//   var subEl = document.createElement("div");
+//   subEl.style.backgroundColor = "green";
+//   subEl.style.border = "1 px solid black";
+//   subEl.style.width = "300px";
+//   subEl.style.height = "200px";
+//   subEl.style.margin = "10px";
+//   subEl.innerHTML = vals.fact;
+//   return subEl;
+// }
+
+// var ctr = document.getElementById("container");
+// ctr.style.display = "flex";
+// ctr.style.justifyContent = "flex-start";
+// ctr.style.flexWrap = "wrap";
+
+// var pagintationCtr = document.getElementById("pagination-container");
+
+// var fetchLink = "https://catfact.ninja/facts";
+
+// function fetchData() {
+//   fetch(fetchLink)
+//     .then((res) => {
+//       return res.json();
+//     })
+//     .then((res) => {
+//       ctr.innerHTML = "";
+//       for (let i = 0; i < res.data.length; i++) {
+//         ctr.appendChild(generateCard(res.data[i]));
+//       }
+
+//       pagintationCtr.innerHTML = "";
+
+//       for (i = 0; i < res.links.length; i++) {
+//         pagintationCtr.appendChild(pageNav(res.links[i]));
+//       }
+//     })
+//     .catch((error) => {
+//       console.log(error);
+//     });
+// }
+
+// fetchData();
+//domevents.dev
+//onclick, onchange, addEventListener
+//local storage
+
+// var eBtn = document.getElementById("event");
+// eBtn.style.backgroundColor = "pink";
+// eBtn.style.color = "grey";
+// eBtn.style.border = "none";
+// eBtn.style.borderRadius = "5px";
+// eBtn.style.padding = "10px ";
+
+// var inp = document.getElementById("search");
+// inp.style.borderRadius = "5px";
+// inp.style.padding = "10px ";
+
+// eBtn.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   console.log(e);
+//   console.log(object);
+// });
+
+// var formVal = {};
+// simple post request using fetch api
+// const user={
+//     [e.target.form[0].name]: e.target.form[0].value],
+//     [e.target.form[1].name]: e.target.form[1].value],
+//     [e.target.form[2].name]: e.target.form[2].value],
+
+//     [e.target.form[2].name]: e.target.form[3].value];
+
+// frm.style.display = "flex";
+// frm.style.justifyContent = "start";
+// frm.style.flexDirection = "column";
+
+var frm = document.getElementById("btn");
+frm.style.display = "inline-block";
+
+frm.addEventListener("click", (e) => {
+  e.preventDefault();
+  const user = {
+    email: e.target.form[0].value,
+    name: e.target.form[1].value,
+    password: e.target.form[2].value,
+    username: e.target.form[3].value,
   };
-  return nav;
-}
+  console.log(user);
 
-function generateCard(values) {
-  var subDiv = document.createElement("div");
-  (subDiv.style.width = "200px"),
-    (subDiv.style.height = "300px"),
-    (subDiv.style.backgroundColor = "pink"),
-    (subDiv.style.border = "solid 1px black"),
-    (subDiv.style.borderRadius = "10px");
-  subDiv.style.fontSize = "20px";
-  subDiv.style.padding = "5px";
-  subDiv.style.margin = "10px";
-  subDiv.innerHTML = values.fact;
-  return subDiv;
-}
-
-function fetchData() {
-  fetch(fetchLink)
+  fetch("https://serene-fortress-45917.herokuapp.com/v1/auth/signup", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json;charset=UTF-8",
+    },
+    body: JSON.stringify(user),
+  })
+    .then((res) => res.json())
     .then((res) => {
-      return res.json();
-    })
-    .then((res) => {
-      src.innerHTML = "";
-      for (let i = 0; i < res.data.length; i++) {
-        src.appendChild(generateCard(res.data[i]));
-      }
-      paginationSrc.innerHTML = "";
-      for (let i = 0; index < res.links.length; index++) {
-        paginationSrc.appendChild(pageNavigation(res.links[i]));
-      }
+      console.log(res);
     })
     .catch((err) => {
       console.log(err);
     });
-}
-
-var src = document.getElementById("moj_div");
-src.style.display = "flex";
-src.style.justifyContent = "flex-start";
-src.style.flexWrap = "wrap";
-
-var paginationSrc = document.getElementById("pagination_container");
-var fetchLink = "https://catfact.ninja/facts";
-fetchData();
+});
