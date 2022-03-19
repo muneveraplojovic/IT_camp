@@ -2564,31 +2564,63 @@
 // frm.style.justifyContent = "start";
 // frm.style.flexDirection = "column";
 
-var frm = document.getElementById("btn");
-frm.style.display = "inline-block";
+// var frm = document.getElementById("btn");
+// frm.style.display = "inline-block";
 
-frm.addEventListener("click", (e) => {
-  e.preventDefault();
-  const user = {
-    email: e.target.form[0].value,
-    name: e.target.form[1].value,
-    password: e.target.form[2].value,
-    username: e.target.form[3].value,
-  };
-  console.log(user);
+// frm.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   const user = {
+//     email: e.target.form[0].value,
+//     name: e.target.form[1].value,
+//     password: e.target.form[2].value,
+//     username: e.target.form[3].value,
+//   };
+//   console.log(user);
+//-------------------------------
+//Koristimo localStorage objekat i njegov metod setItem, gde prosleđujemo ključ i vrednost.
+// -----------------------------
+//   fetch("https://serene-fortress-45917.herokuapp.com/v1/auth/signup", {
+//     method: "POST",
+//     headers: {
+//       "Content-Type": "application/json;charset=UTF-8",
+//     },
+//     body: JSON.stringify(user),
+//   })
+//     .then((res) => res.json())
+//     .then((res) => {
+//       console.log(res);
+//     })
+//     .catch((err) => {
+//       console.log(err);
+//     });
+// });
 
-  fetch("https://serene-fortress-45917.herokuapp.com/v1/auth/signup", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json;charset=UTF-8",
-    },
-    body: JSON.stringify(user),
-  })
-    .then((res) => res.json())
-    .then((res) => {
-      console.log(res);
-    })
-    .catch((err) => {
-      console.log(err);
-    });
-});
+// // To add a new value:
+
+// localStorage.setItem("myCat1", "Tom1");
+// localStorage.setItem("myCat2", "Tom2");
+// localStorage.setItem("myCat3", "Tom3");
+// localStorage.setItem("myCat4", "Tom4");
+
+// const cat = localStorage.getItem("myCat");
+// console.log(cat);
+
+// console.log("---------------------------------------");
+
+// //The syntax for reading the localStorage item is as follows:
+
+// const cat = localStorage.getItem("myCat3");
+// console.log(cat);
+
+// console.log("---------------------------------------");
+
+// //The syntax for removing the localStorage item is as follows:
+
+// localStorage.removeItem("myCat4");
+// console.log(localStorage.getItem("myCat4"));
+// console.log("---------------------------------------");
+
+// //The syntax for removing all the localStorage items is as follows:
+
+// localStorage.clear();
+console.log("maja");

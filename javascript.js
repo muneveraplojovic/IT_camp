@@ -84,11 +84,18 @@
 // }
 // console.log(suma);
 
-for (let i = 1; i <= 5; i++) {
-  console.log(i);
-  console.log("");
-  for (let j = 1; j <= i; j++) {
-    console.log("");
-    console.log(j);
-  }
-}
+// for (let i = 1; i <= 5; i++) {
+//   console.log(i);
+//   console.log("");
+//   for (let j = 1; j <= i; j++) {
+//     console.log("");
+//     console.log(j);
+//   }
+// }
+
+unos1 = Number(prompt("Unesite neki broj:"));
+unos2 = Number(prompt("Unesite jos jedan broj:"));
+
+if (unos1 > unos2) {
+  unos1.push(broj);
+} else alert("Najveci uneti broj je broj", broj);

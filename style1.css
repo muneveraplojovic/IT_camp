@@ -10,6 +10,7 @@ body {
 .main_div {
   display: flex;
   justify-content: center;
+  align-content: center;
 }
 .first_div {
   height: 352px;
