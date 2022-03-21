@@ -2594,33 +2594,3 @@
 //       console.log(err);
 //     });
 // });
-
-// // To add a new value:
-
-// localStorage.setItem("myCat1", "Tom1");
-// localStorage.setItem("myCat2", "Tom2");
-// localStorage.setItem("myCat3", "Tom3");
-// localStorage.setItem("myCat4", "Tom4");
-
-// const cat = localStorage.getItem("myCat");
-// console.log(cat);
-
-// console.log("---------------------------------------");
-
-// //The syntax for reading the localStorage item is as follows:
-
-// const cat = localStorage.getItem("myCat3");
-// console.log(cat);
-
-// console.log("---------------------------------------");
-
-// //The syntax for removing the localStorage item is as follows:
-
-// localStorage.removeItem("myCat4");
-// console.log(localStorage.getItem("myCat4"));
-// console.log("---------------------------------------");
-
-// //The syntax for removing all the localStorage items is as follows:
-
-// localStorage.clear();
-console.log("maja");
