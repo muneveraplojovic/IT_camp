@@ -2594,3 +2594,13 @@
 //       console.log(err);
 //     });
 // });
+
+// addEventListener
+
+// e.stopPropagantion()-prekida bubbling
+//padaju slova klikcemo i kad stisnemo puknu slova
+
+// ioefwkjlcmsd;oiflkv',spd;
+// sdvcszdvv
+// sdvsdvsdv
+// dsvsdv
